@@ -23,6 +23,7 @@ public class ModTabs {
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_ROCKET_POD.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_BMP.get()));
+                output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_SPG9.get()));
             }).build());
 
     @Mod.EventBusSubscriber(modid = FCP.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)

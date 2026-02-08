@@ -4,6 +4,7 @@ import frontline.combat.fcp.FCP;
 import frontline.combat.fcp.client.renderer.ToyotaHiluxBMPRenderer;
 import frontline.combat.fcp.client.renderer.ToyotaHiluxRenderer;
 import frontline.combat.fcp.client.renderer.ToyotaHiluxRocketPodRenderer;
+import frontline.combat.fcp.client.renderer.ToyotaHiluxSpg9Renderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,5 +16,6 @@ public class ModEntityRenderers {
         event.registerEntityRenderer(ModEntities.TOYOTA_HILUX.get(), ToyotaHiluxRenderer::new);
         event.registerEntityRenderer(ModEntities.TOYOTA_HILUX_ROCKET_POD.get(), ToyotaHiluxRocketPodRenderer::new);
         event.registerEntityRenderer(ModEntities.TOYOTA_HILUX_BMP.get(), ToyotaHiluxBMPRenderer::new);
+        event.registerEntityRenderer(ModEntities.TOYOTA_HILUX_SPG9.get(), ToyotaHiluxSpg9Renderer::new);
     }
 }

@@ -1,12 +1,12 @@
 ﻿{
-  "ID": "fcp:toyota_hilux_bmp",
+  "ID": "fcp:toyota_hilux_spg9",
   "MaxHealth": 150,
   "MaxEnergy": 5000000,
   "TurretPos": [-0.04, 3.125, -2.3],
   "TurretTurnSpeed": [15, 15],
   "TurretPitchRange": [-10, 40],
   "BarrelPos": [0, 3.125, 0.4],
-  "TurretControllerIndex": 5,
+  "TurretControllerIndex": 1,
   "OBB": [
     {
       "Size": [0.21, 0.465, 0.465],
@@ -42,15 +42,14 @@
       "Position": [0, 2.01, 0.05]
     },
     {
-      "Size": [1.0, 0.01, 0.968],
-      "Position": [-0.05, 2.95, -2.3]
+      "Size": [0.01, 0.01, 0.01],
+      "Position": [0, 3.0, -1]
     }
   ],
   "Seats": [
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "Weapons": [],
       "BanHand": true,
       "Position": [0.50, 0.30, 0.25],
       "MinPitch": -60,
@@ -61,7 +60,14 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
+      "Weapons": ["Rocket"],
       "BanHand": true,
+      "CameraPos": {
+        "UseFixedCameraPos": true,
+        "Transform": "Barrel",
+        "Position": [0, -3, -1],
+        "Rotation": "Barrel"
+      },
       "Position": [-0.50, 0.30, 0.25],
       "MinPitch": -60,
       "MaxPitch": 60,
@@ -96,53 +102,15 @@
       "MaxPitch": 60,
       "MinYaw": -95,
       "MaxYaw": 95
-    },
-    {
-      "IsEnclosed": true,
-      "HidePlayer": true,
-      "Weapons": ["Cannon"],
-      "Transform": "Vehicle",
-      "CameraPos": {
-        "Transform": "Turret",
-        "Position": [0.425, 0.5, 0.2],
-        "UseFixedCameraPos": true
-      },
-      "MinPitch": -10,
-      "MaxPitch": 40,
-      "Position": [0, 0.5, -2.5]
     }
   ],
   "Weapons": {
-    "Cannon": {
-      "Icon": "fcp:textures/screens/vehicle_weapon/ap_shell.png",
-      "DefaultFireMode": "Semi",
-      "AvailableFireModes": "Semi",
-      "Projectile": "superbwarfare:cannon_shell",
-      "IsArmorPiercingProjectile": true,
-      "DefaultZoom": 3,
-      "Magazine": 1,
-      "EmptyReloadTime": 20,
-      "Velocity": 40,
-      "Damage": 495,
-      "ExplosionDamage": 80,
-      "ExplosionRadius": 4,
-      "RecoilTime": 42,
-      "RecoilForce": 1.0,
-      "ShootShake": [8, 10, 60],
-      "Spread": 0.02,
-      "ShootAnimationTime": 10,
+    "Nothing": {
+      "Name": "",
       "Crosshair": "@Empty",
-      "CrosshairColor": "0x00ff66",
-      "Name": "weapon.fcp.120mm_cannon",
-      "AmmoType": [
-        "superbwarfare:ap_cannon_shell"
-      ],
-      "SoundRadius": 32,
-      "ShootPos": {
-        "Transform": "Barrel",
-        "Positions": [[0, -3.25, -5.5]],
-        "Directions": ["Barrel"]
-      }
+      "RPM": 0,
+      "Magazine": 0,
+      "Damage": 0
     }
   },
   "EngineType": "Wheel",
@@ -194,6 +162,43 @@
     "ExplosionDamage": 120,
     "ExplosionRadius": 7
   },
+  "Weapons": {
+    "Rocket": {
+      "AmmoType": "superbwarfare:small_rocket",
+      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/small_rocket.png",
+      "DefaultZoom": 2,
+      "DefaultFireMode": "Semi",
+      "AvailableFireModes": "Semi",
+      "Magazine": 12,
+      "EmptyReloadTime": 180,
+      "Projectile": "superbwarfare:small_rocket",
+      "Spread": 0.3,
+      "Name": "weapon.fcp.hydra_rocket",
+      "RPM": 400,
+      "Damage": 80,
+      "ExplosionDamage": 40,
+      "ExplosionRadius": 5,
+      "Gravity": 0.02,
+      "Velocity": 16,
+      "ShootPos": {
+        "Transform": "Barrel",
+        "Positions": [
+          [
+            0,
+            -3.175,
+            -1
+          ]
+        ],
+        "Directions": [
+          [
+            0,
+            0.02,
+            1
+          ]
+        ]
+      }
+    }
+  },
   "ThirdPersonCameraPos": [0, 1, 5],
   "VehicleIcon": "superbwarfare:textures/vehicle_icon/humvee_icon.png",
   "ContainerIcon": "fcp:textures/gui/vehicle/type/land_ter.png",
@@ -208,7 +213,7 @@
   },
   "EngineSound": "superbwarfare:truck_engine",
   "HornSound": "superbwarfare:truck_horn",
-  "HudType": "@Land",
+  "HudType": "@Empty",
   "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],
   "InertiaRotateRate": 1.8
 }
