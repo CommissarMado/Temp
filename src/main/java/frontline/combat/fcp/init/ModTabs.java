@@ -21,6 +21,7 @@ public class ModTabs {
             .title(Component.translatable("terroristtab.fc_terrorist_tab"))
             .displayItems((parameters, output) -> {
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX.get()));
+                output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_ROCKET_POD.get()));
             }).build());
 
     @Mod.EventBusSubscriber(modid = FCP.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
