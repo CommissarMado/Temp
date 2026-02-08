@@ -1,6 +1,7 @@
 package frontline.combat.fcp.init;
 
 import frontline.combat.fcp.FCP;
+import frontline.combat.fcp.entity.vehicle.ToyotaHiluxBMPEntity;
 import frontline.combat.fcp.entity.vehicle.ToyotaHiluxEntity;
 import frontline.combat.fcp.entity.vehicle.ToyotaHiluxRocketPodEntity;
 import net.minecraft.world.entity.Entity;
@@ -19,6 +20,9 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<ToyotaHiluxRocketPodEntity>> TOYOTA_HILUX_ROCKET_POD = register("toyota_hilux_rocket_pod",
             EntityType.Builder.of(ToyotaHiluxRocketPodEntity::new, MobCategory.MISC).setTrackingRange(512).setUpdateInterval(1).fireImmune().sized(3f,2f));
+
+    public static final RegistryObject<EntityType<ToyotaHiluxBMPEntity>> TOYOTA_HILUX_BMP = register("toyota_hilux_bmp",
+            EntityType.Builder.of(ToyotaHiluxBMPEntity::new, MobCategory.MISC).setTrackingRange(512).setUpdateInterval(1).fireImmune().sized(3f,2f));
     private static <T extends Entity> RegistryObject<EntityType<T>> register(String name, EntityType.Builder<T> entityTypeBuilder) {
         return ENTITY_TYPES.register(name, () -> entityTypeBuilder.build(name));
 

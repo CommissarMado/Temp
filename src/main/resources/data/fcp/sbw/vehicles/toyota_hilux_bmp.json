@@ -1,7 +1,12 @@
 ﻿{
-  "ID": "fcp:toyota_hilux_rocket_pod",
+  "ID": "fcp:toyota_hilux_bmp",
   "MaxHealth": 150,
   "MaxEnergy": 5000000,
+  "TurretPos": [-0.04, 3.125, -2.3],
+  "TurretTurnSpeed": [15, 15],
+  "TurretPitchRange": [-10, 40],
+  "BarrelPos": [0, 3.125, 0.4],
+  "TurretControllerIndex": 5,
   "OBB": [
     {
       "Size": [0.21, 0.465, 0.465],
@@ -37,15 +42,15 @@
       "Position": [0, 2.01, 0.05]
     },
     {
-      "Size": [0.25, 0.25, 0.25],
-      "Position": [0, 3.175, -1]
+      "Size": [1.0, 0.01, 0.968],
+      "Position": [-0.05, 2.95, -2.3]
     }
   ],
   "Seats": [
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "Weapons": ["Rocket"],
+      "Weapons": [],
       "BanHand": true,
       "Position": [0.50, 0.30, 0.25],
       "MinPitch": -60,
@@ -91,6 +96,19 @@
       "MaxPitch": 60,
       "MinYaw": -95,
       "MaxYaw": 95
+    },
+    {
+      "IsEnclosed": true,
+      "HidePlayer": true,
+      "Transform": "Vehicle",
+      "CameraPos": {
+        "Transform": "Turret",
+        "Position": [0.5, 0.5, 0],
+        "UseFixedCameraPos": true
+      },
+      "MinPitch": -10,
+      "MaxPitch": 40,
+      "Position": [0, 0.5, -2.5]
     }
   ],
   "Weapons": {
@@ -151,43 +169,6 @@
     "ExplosionDamage": 120,
     "ExplosionRadius": 7
   },
-  "Weapons": {
-    "Rocket": {
-      "AmmoType": "superbwarfare:small_rocket",
-      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/small_rocket.png",
-      "DefaultZoom": 2,
-      "DefaultFireMode": "Semi",
-      "AvailableFireModes": "Semi",
-      "Magazine": 12,
-      "EmptyReloadTime": 180,
-      "Projectile": "superbwarfare:small_rocket",
-      "Spread": 0.3,
-      "Name": "weapon.fcp.hydra_rocket",
-      "RPM": 400,
-      "Damage": 80,
-      "ExplosionDamage": 40,
-      "ExplosionRadius": 5,
-      "Gravity": 0.02,
-      "Velocity": 16,
-      "ShootPos": {
-        "Transform": "Vehicle",
-        "Positions": [
-          [
-            0,
-            3.175,
-            -1
-          ]
-        ],
-        "Directions": [
-          [
-            0,
-            0.02,
-            1
-          ]
-        ]
-      }
-    }
-    },
   "ThirdPersonCameraPos": [0, 1, 5],
   "VehicleIcon": "superbwarfare:textures/vehicle_icon/humvee_icon.png",
   "ContainerIcon": "fcp:textures/gui/vehicle/type/land_ter.png",

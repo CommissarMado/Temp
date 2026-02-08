@@ -1,6 +1,7 @@
 package frontline.combat.fcp.init;
 
 import frontline.combat.fcp.FCP;
+import frontline.combat.fcp.client.renderer.ToyotaHiluxBMPRenderer;
 import frontline.combat.fcp.client.renderer.ToyotaHiluxRenderer;
 import frontline.combat.fcp.client.renderer.ToyotaHiluxRocketPodRenderer;
 import net.minecraftforge.api.distmarker.Dist;
@@ -13,5 +14,6 @@ public class ModEntityRenderers {
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.TOYOTA_HILUX.get(), ToyotaHiluxRenderer::new);
         event.registerEntityRenderer(ModEntities.TOYOTA_HILUX_ROCKET_POD.get(), ToyotaHiluxRocketPodRenderer::new);
+        event.registerEntityRenderer(ModEntities.TOYOTA_HILUX_BMP.get(), ToyotaHiluxBMPRenderer::new);
     }
 }

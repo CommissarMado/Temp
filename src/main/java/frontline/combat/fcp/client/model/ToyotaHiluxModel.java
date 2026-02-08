@@ -8,7 +8,7 @@ import org.jetbrains.annotations.Nullable;
 public class ToyotaHiluxModel extends VehicleModel<ToyotaHiluxEntity>{
     @Override
     public boolean hideForTurretControllerWhileZooming() {
-        return true;
+        return false;
     }
 
 
