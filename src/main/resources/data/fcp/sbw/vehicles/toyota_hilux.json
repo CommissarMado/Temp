@@ -24,16 +24,26 @@
       "Part": "WheelRight"
     },
     {
-      "Size": [1.0, 0.65, 2.4],
-      "Position": [0, 1.4, 0]
+      "Size": [1.068, 0.525, 2.5],
+      "Position": [0, 1.135, -0.99]
+    },
+    {
+      "Size": [1.068, 0.525, 0.75],
+      "Position": [0, 1.135, 2.26],
+      "Part": "MainEngine"
+    },
+    {
+      "Size": [1.068, 0.35, 1.425],
+      "Position": [0, 2.01, 0.05]
     }
   ],
   "Seats": [
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "Weapons": ["Nothing"],
-      "Position": [0.50, 0.40, 0.3],
+      "Weapons": [],
+      "BanHand": true,
+      "Position": [0.50, 0.30, 0.25],
       "MinPitch": -60,
       "MaxPitch": 60,
       "MinYaw": -95,
@@ -43,7 +53,7 @@
       "IsEnclosed": true,
       "Transform": "Vehicle",
       "BanHand": true,
-      "Position": [-0.50, 0.40, 0.3],
+      "Position": [-0.50, 0.30, 0.25],
       "MinPitch": -60,
       "MaxPitch": 60,
       "MinYaw": -95,
@@ -52,9 +62,8 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "BanHand": false,
-      "Position": [0.5, 0.75, -0.8],
-      "Orientation": 180,
+      "BanHand": true,
+      "Position": [0.50, 0.30, -0.9],
       "MinPitch": -60,
       "MaxPitch": 60,
       "MinYaw": -95,
@@ -63,9 +72,8 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "BanHand": false,
-      "Position": [-0.5, 0.75, -0.8],
-      "Orientation": 180,
+      "BanHand": true,
+      "Position": [0, 0.30, -0.9],
       "MinPitch": -60,
       "MaxPitch": 60,
       "MinYaw": -95,
@@ -74,24 +82,40 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "BanHand": false,
-      "Position": [0.7, 0.40, -2.4],
+      "Position": [-0.50, 0.30, -0.9],
+      "MinPitch": -60,
+      "MaxPitch": 60,
+      "MinYaw": -95,
+      "MaxYaw": 95
+    },
+    {
+      "IsEnclosed": true,
+      "Transform": "Vehicle",
+      "Position": [0.75, 0.75, -2.1],
       "Orientation": 90,
       "MinPitch": -60,
       "MaxPitch": 60,
-      "MinYaw": -75,
-      "MaxYaw": 75
+      "MinYaw": -85,
+      "MaxYaw": 85
     },
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "BanHand": false,
-      "Position": [-0.7, 0.40, -2.4],
+      "Position": [-0.75, 0.75, -2.1],
       "Orientation": -90,
       "MinPitch": -60,
       "MaxPitch": 60,
-      "MinYaw": -75,
-      "MaxYaw": 75
+      "MinYaw": -85,
+      "MaxYaw": 85
+    },
+    {
+      "IsEnclosed": true,
+      "Transform": "Vehicle",
+      "Position": [0, 0.5, -3.25],
+      "MinPitch": -60,
+      "MaxPitch": 60,
+      "MinYaw": -85,
+      "MaxYaw": 85
     }
   ],
   "Weapons": {
@@ -109,7 +133,7 @@
     "EnergyCostRate": 96,
     "WheelRotSpeed": 1.25,
     "WheelDifferential": 0.5,
-    "MaxForwardSpeedRate": 0.9,
+    "MaxForwardSpeedRate": 1.62,
     "MaxBackwardSpeedRate": 0.33,
     "Increment": 0.025,
     "Decrement": 0.020,
@@ -166,7 +190,7 @@
   },
   "EngineSound": "superbwarfare:truck_engine",
   "HornSound": "superbwarfare:truck_horn",
-  "HudType": "@Land",
+  "HudType": "@Empty",
   "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],
   "InertiaRotateRate": 1.8
 }
