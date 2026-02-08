@@ -13,6 +13,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> TERRORIST_TAB_ICON = REGISTRY.register("terrorist_tab_icon", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> DELICIOUS_SNACK = REGISTRY.register("delicious_snack",
+            () -> new Item(new Item.Properties().food(ModFoods.DELICIOUS_SNACK)));
+
     public static final RegistryObject<Item> SPRAY = REGISTRY.register("spray",
             () -> new frontline.combat.fcp.item.varies.SprayItem());
 }

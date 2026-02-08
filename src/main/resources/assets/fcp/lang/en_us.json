@@ -6,5 +6,8 @@
   "entity.fcp.toyota_hilux_bmp": "Toyota Hilux With BMP",
 
   "//": "======================== Weapons ========================",
-  "weapon.fcp.hydra_rocket": "Hydra-70 "
+  "weapon.fcp.hydra_rocket": "Hydra-70 ",
+
+  "//": "========================= Foods =========================",
+  "item.fcp.delicious_snack": "Box of Crayons"
 }
