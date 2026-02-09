@@ -42,8 +42,9 @@
       "Position": [0, 2.01, 0.05]
     },
     {
-      "Size": [1.0, 0.01, 0.968],
-      "Position": [-0.05, 2.95, -2.3]
+      "Size": [1.0, 0.25, 0.968],
+      "Position": [-0.05, 3.1, -2.3],
+      "Part": "Turret"
     }
   ],
   "Seats": [
@@ -133,7 +134,7 @@
       "ShootAnimationTime": 10,
       "Crosshair": "@Empty",
       "CrosshairColor": "0x00ff66",
-      "Name": "weapon.fcp.120mm_cannon",
+      "Name": "weapon.fcp.2a28_grom",
       "AmmoType": [
         "superbwarfare:ap_cannon_shell"
       ],

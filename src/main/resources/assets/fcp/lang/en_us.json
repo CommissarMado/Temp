@@ -4,9 +4,11 @@
   "entity.fcp.toyota_hilux": "Toyota Hilux",
   "entity.fcp.toyota_hilux_rocket_pod": "Toyota Hilux With Rocket Pod",
   "entity.fcp.toyota_hilux_bmp": "Toyota Hilux With BMP",
+  "entity.fcp.toyota_hilux_spg9": "Toyota Hilux With SPG-9",
 
   "//": "======================== Weapons ========================",
   "weapon.fcp.hydra_rocket": "Hydra-70 ",
+  "weapon.fcp.2a28_grom": "2A28 Grom",
 
   "//": "========================= Foods =========================",
   "item.fcp.delicious_snack": "Box of Crayons"

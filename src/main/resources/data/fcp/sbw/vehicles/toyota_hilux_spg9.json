@@ -2,10 +2,10 @@
   "ID": "fcp:toyota_hilux_spg9",
   "MaxHealth": 150,
   "MaxEnergy": 5000000,
-  "TurretPos": [-0.04, 3.125, -2.3],
+  "TurretPos": [-0.335, 2.5, -2.4],
   "TurretTurnSpeed": [15, 15],
   "TurretPitchRange": [-10, 40],
-  "BarrelPos": [0, 3.125, 0.4],
+  "BarrelPos": [0, 3.0, 0],
   "TurretControllerIndex": 1,
   "OBB": [
     {
@@ -40,10 +40,6 @@
     {
       "Size": [1.068, 0.35, 1.425],
       "Position": [0, 2.01, 0.05]
-    },
-    {
-      "Size": [0.01, 0.01, 0.01],
-      "Position": [0, 3.0, -1]
     }
   ],
   "Seats": [
@@ -64,13 +60,13 @@
       "BanHand": true,
       "CameraPos": {
         "UseFixedCameraPos": true,
-        "Transform": "Barrel",
-        "Position": [0, -3, -1],
+        "Transform": "Turret",
+        "Position": [-0.25, 0.5, 0],
         "Rotation": "Barrel"
       },
       "Position": [-0.50, 0.30, 0.25],
-      "MinPitch": -60,
-      "MaxPitch": 60,
+      "MinPitch": -10,
+      "MaxPitch": 40,
       "MinYaw": -95,
       "MaxYaw": 95
     },
@@ -183,11 +179,7 @@
       "ShootPos": {
         "Transform": "Barrel",
         "Positions": [
-          [
-            0,
-            -3.175,
-            -1
-          ]
+          [0, -2.85, 1.5]
         ],
         "Directions": [
           [
