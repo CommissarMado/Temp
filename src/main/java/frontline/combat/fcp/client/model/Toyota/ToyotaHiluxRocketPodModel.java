@@ -1,8 +1,7 @@
-package frontline.combat.fcp.client.model;
+package frontline.combat.fcp.client.model.Toyota;
 
 import com.atsuishio.superbwarfare.client.model.entity.VehicleModel;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxEntity;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxRocketPodEntity;
+import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxRocketPodEntity;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;
 

@@ -1,10 +1,11 @@
 package frontline.combat.fcp.init;
 
 import frontline.combat.fcp.FCP;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxBMPEntity;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxEntity;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxRocketPodEntity;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxSpg9Entity;
+import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxBMPEntity;
+import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxEntity;
+import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxRocketPodEntity;
+import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxSpg9Entity;
+import frontline.combat.fcp.entity.vehicle.Uaz.UAZEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -28,6 +29,8 @@ public class ModEntities {
     public static final RegistryObject<EntityType<ToyotaHiluxSpg9Entity>> TOYOTA_HILUX_SPG9 = register("toyota_hilux_spg9",
             EntityType.Builder.of(ToyotaHiluxSpg9Entity::new, MobCategory.MISC).setTrackingRange(512).setUpdateInterval(1).fireImmune().sized(3f,2f));
 
+    public static final RegistryObject<EntityType<UAZEntity>> UAZ = register("uaz",
+            EntityType.Builder.of(UAZEntity::new, MobCategory.MISC).setTrackingRange(512).setUpdateInterval(1).fireImmune().sized(3f,2f));
 
     private static <T extends Entity> RegistryObject<EntityType<T>> register(String name, EntityType.Builder<T> entityTypeBuilder) {
         return ENTITY_TYPES.register(name, () -> entityTypeBuilder.build(name));

@@ -13,6 +13,7 @@ public class ModSounds {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, FCP.MODID);
 
     public static final RegistryObject<SoundEvent> SPRAY = register("spray");
+    public static final RegistryObject<SoundEvent> TOYOTA_IDLE = register("toyota_idle");
 
     private static RegistryObject<SoundEvent> register(String name) {
         return REGISTRY.register(name, () -> SoundEvent.createVariableRangeEvent(FCP.loc(name)));

@@ -1,5 +1,10 @@
 ﻿{
   "spray": {
     "sounds": ["fcp:spray"]
-  }
+  },
+  "toyota_idle": [
+    {
+      "sounds": ["fcp:toyota_engine_idle.ogg"]
+    }
+  ]
 }

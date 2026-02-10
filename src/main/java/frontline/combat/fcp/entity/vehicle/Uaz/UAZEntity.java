@@ -1,6 +1,8 @@
-package frontline.combat.fcp.entity.vehicle;
+package frontline.combat.fcp.entity.vehicle.Uaz;
 
 import com.atsuishio.superbwarfare.entity.vehicle.damage.DamageModifier;
+import frontline.combat.fcp.entity.vehicle.CamoVehicleBase;
+import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxBMPEntity;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -8,14 +10,21 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 
-public class ToyotaHiluxRocketPodEntity extends CamoVehicleBase {
+public class UAZEntity extends CamoVehicleBase {
+
     private static final ResourceLocation[] CAMO_TEXTURES = {
-            new ResourceLocation("fcp", "textures/entity/toyota_hilux.png")
+            new ResourceLocation("fcp", "textures/entity/uaz/uaz_1.png"),
+            new ResourceLocation("fcp", "textures/entity/uaz/uaz_2.png"),
+            new ResourceLocation("fcp", "textures/entity/uaz/uaz_3.png"),
+            new ResourceLocation("fcp", "textures/entity/uaz/uaz_4.png"),
+            new ResourceLocation("fcp", "textures/entity/uaz/uaz_5.png"),
+            new ResourceLocation("fcp", "textures/entity/uaz/uaz_6.png"),
+            new ResourceLocation("fcp", "textures/entity/uaz/uaz_ruined.png")
     };
 
-    private static final String[] CAMO_NAMES = {"Toyota"};
+    private static final String[] CAMO_NAMES = {"Base", "Z", "Ukraine", "Ukraine Medic", "Blue", "Orange", "Ruined"};
 
-    private static final EntityDataAccessor<Float> STEERING_ANGLE = SynchedEntityData.defineId(ToyotaHiluxRocketPodEntity.class, EntityDataSerializers.FLOAT);
+    private static final EntityDataAccessor<Float> STEERING_ANGLE = SynchedEntityData.defineId(UAZEntity.class, EntityDataSerializers.FLOAT);
 
     private float prevSteeringAngle = 0f;
 
@@ -23,7 +32,7 @@ public class ToyotaHiluxRocketPodEntity extends CamoVehicleBase {
 
     private float prevWheelRotation = 0f;
 
-    public ToyotaHiluxRocketPodEntity(EntityType<ToyotaHiluxRocketPodEntity> type, Level world) {super(type, world);}
+    public UAZEntity(EntityType<UAZEntity> type, Level world) {super(type, world);}
 
     @Override
     public ResourceLocation[] getCamoTextures() {return CAMO_TEXTURES;}

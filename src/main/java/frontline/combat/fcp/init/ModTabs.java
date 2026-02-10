@@ -24,6 +24,14 @@ public class ModTabs {
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_ROCKET_POD.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_BMP.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_SPG9.get()));
+                output.accept(ContainerBlockItem.createInstance(ModEntities.UAZ.get()));
+            }).build());
+
+    public static final RegistryObject<CreativeModeTab> RUSSIAN_VEHICLE_TAB = TABS.register("russian_tab", () -> CreativeModeTab.builder()
+            .icon(() -> new ItemStack(ModItems.RUSSIAN_TAB_ICON.get()))
+            .title(Component.translatable("russiantab.fc_russian_tab"))
+            .displayItems((parameters, output) -> {
+                output.accept(ContainerBlockItem.createInstance(ModEntities.UAZ.get()));
             }).build());
 
     @Mod.EventBusSubscriber(modid = FCP.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)

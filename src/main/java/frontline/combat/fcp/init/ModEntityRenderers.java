@@ -1,10 +1,11 @@
 package frontline.combat.fcp.init;
 
 import frontline.combat.fcp.FCP;
-import frontline.combat.fcp.client.renderer.ToyotaHiluxBMPRenderer;
-import frontline.combat.fcp.client.renderer.ToyotaHiluxRenderer;
-import frontline.combat.fcp.client.renderer.ToyotaHiluxRocketPodRenderer;
-import frontline.combat.fcp.client.renderer.ToyotaHiluxSpg9Renderer;
+import frontline.combat.fcp.client.renderer.Toyota.ToyotaHiluxBMPRenderer;
+import frontline.combat.fcp.client.renderer.Toyota.ToyotaHiluxRenderer;
+import frontline.combat.fcp.client.renderer.Toyota.ToyotaHiluxRocketPodRenderer;
+import frontline.combat.fcp.client.renderer.Toyota.ToyotaHiluxSpg9Renderer;
+import frontline.combat.fcp.client.renderer.Uaz.UAZRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,5 +18,7 @@ public class ModEntityRenderers {
         event.registerEntityRenderer(ModEntities.TOYOTA_HILUX_ROCKET_POD.get(), ToyotaHiluxRocketPodRenderer::new);
         event.registerEntityRenderer(ModEntities.TOYOTA_HILUX_BMP.get(), ToyotaHiluxBMPRenderer::new);
         event.registerEntityRenderer(ModEntities.TOYOTA_HILUX_SPG9.get(), ToyotaHiluxSpg9Renderer::new);
+
+        event.registerEntityRenderer(ModEntities.UAZ.get(), UAZRenderer::new);
     }
 }

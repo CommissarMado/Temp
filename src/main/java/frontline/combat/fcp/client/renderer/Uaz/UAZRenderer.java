@@ -1,16 +1,17 @@
-package frontline.combat.fcp.client.renderer;
+package frontline.combat.fcp.client.renderer.Uaz;
 
 import com.atsuishio.superbwarfare.client.renderer.entity.VehicleRenderer;
-import frontline.combat.fcp.client.model.ToyotaHiluxModel;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxEntity;
+import frontline.combat.fcp.client.model.Uaz.UAZModel;
+import frontline.combat.fcp.entity.vehicle.Uaz.UAZEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 
-public class ToyotaHiluxRenderer extends VehicleRenderer<ToyotaHiluxEntity> {
-    public ToyotaHiluxRenderer(EntityRendererProvider.Context renderManager) { super(renderManager, new ToyotaHiluxModel());}
+public class UAZRenderer extends VehicleRenderer<UAZEntity> {
+
+    public UAZRenderer(EntityRendererProvider.Context renderManager) { super(renderManager, new UAZModel());}
 
     @Override
-    public ResourceLocation getTextureLocation(ToyotaHiluxEntity entity) {
+    public ResourceLocation getTextureLocation(UAZEntity entity) {
         ResourceLocation[] textures = entity.getCamoTextures();
         int camoType = entity.getCamoType();
 

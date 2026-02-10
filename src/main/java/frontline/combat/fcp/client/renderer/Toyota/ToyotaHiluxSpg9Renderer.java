@@ -1,8 +1,8 @@
-package frontline.combat.fcp.client.renderer;
+package frontline.combat.fcp.client.renderer.Toyota;
 
 import com.atsuishio.superbwarfare.client.renderer.entity.VehicleRenderer;
-import frontline.combat.fcp.client.model.ToyotaHiluxSpg9Model;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxSpg9Entity;
+import frontline.combat.fcp.client.model.Toyota.ToyotaHiluxSpg9Model;
+import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxSpg9Entity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 

@@ -1,12 +1,11 @@
-package frontline.combat.fcp.client.model;
+package frontline.combat.fcp.client.model.Toyota;
 
 import com.atsuishio.superbwarfare.client.model.entity.VehicleModel;
-import frontline.combat.fcp.entity.vehicle.ToyotaHiluxBMPEntity;
+import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxEntity;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;
 
-public class ToyotaHiluxBMPModel extends VehicleModel<ToyotaHiluxBMPEntity>{
-
+public class ToyotaHiluxModel extends VehicleModel<ToyotaHiluxEntity>{
     @Override
     public boolean hideForTurretControllerWhileZooming() {
         return false;
@@ -14,7 +13,7 @@ public class ToyotaHiluxBMPModel extends VehicleModel<ToyotaHiluxBMPEntity>{
 
 
     @Override
-    public @Nullable VehicleModel.TransformContext<ToyotaHiluxBMPEntity> collectTransform(String boneName) {
+    public @Nullable VehicleModel.TransformContext<ToyotaHiluxEntity> collectTransform(String boneName) {
         return switch (boneName) {
 
             case "WheelL0Turn", "WheelR0Turn" -> (bone, vehicle, state) -> {
