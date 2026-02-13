@@ -169,6 +169,10 @@
       "ExplosionRadius": 5,
       "Gravity": 0.02,
       "Velocity": 16,
+      "SoundInfo": {
+        "Fire1P": "superbwarfare:small_rocket_fire_1p",
+        "Fire3P": "superbwarfare:small_rocket_fire_3p"
+      },
       "ShootPos": {
         "Transform": "Vehicle",
         "Positions": [
@@ -200,7 +204,7 @@
       [0.15, 0.09, false]
     ]
   },
-  "EngineSound": "toyota_idle",
+  "EngineSound": "superbwarfare:truck_engine",
   "HornSound": "superbwarfare:truck_horn",
   "HudType": "@Empty",
   "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],

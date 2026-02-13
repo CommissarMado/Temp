@@ -128,7 +128,7 @@
     }
   },
   "EngineType": "Wheel",
-  "EngineSound": "toyota_idle",
+  "EngineSound": "superbwarfare:engine_truck",
   "EngineInfo": {
     "Buoyancy": 0,
     "EnergyCostRate": 96,

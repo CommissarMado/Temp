@@ -22,6 +22,14 @@
       "Size": [0.21, 0.465, 0.465],
       "Position": [-0.875, 0.510, -1.375],
       "Part": "WheelRight"
+    },
+    {
+      "Size": [1, 0.5, 2.4],
+      "Position": [0, 1.1, 0.25]
+    },
+    {
+      "Size": [1, 0.5, 1.6],
+      "Position": [0, 2.1, -0.55]
     }
   ],
   "Seats": [
@@ -30,7 +38,7 @@
       "Transform": "Vehicle",
       "Weapons": [],
       "BanHand": true,
-      "Position": [0.50, 0.30, 0.25],
+      "Position": [0.475, 0.30, 0.15],
       "MinPitch": -60,
       "MaxPitch": 60,
       "MinYaw": -95,
@@ -40,7 +48,7 @@
       "IsEnclosed": true,
       "Transform": "Vehicle",
       "BanHand": true,
-      "Position": [-0.50, 0.30, 0.25],
+      "Position": [-0.475, 0.30, 0.15],
       "MinPitch": -60,
       "MaxPitch": 60,
       "MinYaw": -95,
@@ -50,7 +58,7 @@
       "IsEnclosed": true,
       "Transform": "Vehicle",
       "BanHand": true,
-      "Position": [0.50, 0.30, -0.9],
+      "Position": [0.475, 0.30, -0.9],
       "MinPitch": -60,
       "MaxPitch": 60,
       "MinYaw": -95,
@@ -69,40 +77,11 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "Position": [-0.50, 0.30, -0.9],
+      "Position": [-0.475, 0.30, -0.9],
       "MinPitch": -60,
       "MaxPitch": 60,
       "MinYaw": -95,
       "MaxYaw": 95
-    },
-    {
-      "IsEnclosed": true,
-      "Transform": "Vehicle",
-      "Position": [0.75, 0.75, -2.1],
-      "Orientation": 90,
-      "MinPitch": -60,
-      "MaxPitch": 60,
-      "MinYaw": -85,
-      "MaxYaw": 85
-    },
-    {
-      "IsEnclosed": true,
-      "Transform": "Vehicle",
-      "Position": [-0.75, 0.75, -2.1],
-      "Orientation": -90,
-      "MinPitch": -60,
-      "MaxPitch": 60,
-      "MinYaw": -85,
-      "MaxYaw": 85
-    },
-    {
-      "IsEnclosed": true,
-      "Transform": "Vehicle",
-      "Position": [0, 0.5, -3.25],
-      "MinPitch": -60,
-      "MaxPitch": 60,
-      "MinYaw": -85,
-      "MaxYaw": 85
     }
   ],
   "Weapons": {

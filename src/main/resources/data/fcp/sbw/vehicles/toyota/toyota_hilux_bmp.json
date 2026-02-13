@@ -2,10 +2,10 @@
   "ID": "fcp:toyota_hilux_bmp",
   "MaxHealth": 150,
   "MaxEnergy": 5000000,
-  "TurretPos": [-0.04, 3.125, -2.3],
+  "TurretPos": [-0.0347, 2.97765, -2.3161],
   "TurretTurnSpeed": [15, 15],
   "TurretPitchRange": [-10, 40],
-  "BarrelPos": [0, 3.125, 0.4],
+  "BarrelPos": [0.057356, -0.019113, 0.852225],
   "TurretControllerIndex": 5,
   "OBB": [
     {
@@ -105,7 +105,7 @@
       "Transform": "Vehicle",
       "CameraPos": {
         "Transform": "Turret",
-        "Position": [0.425, 0.5, 0.2],
+        "Position": [0.305994, 0.455074, 0.582156],
         "UseFixedCameraPos": true
       },
       "MinPitch": -10,
@@ -122,13 +122,13 @@
       "IsArmorPiercingProjectile": true,
       "DefaultZoom": 3,
       "Magazine": 1,
-      "EmptyReloadTime": 20,
-      "Velocity": 40,
+      "EmptyReloadTime": 60,
+      "Velocity": 20,
       "Damage": 495,
       "ExplosionDamage": 80,
       "ExplosionRadius": 4,
       "RecoilTime": 42,
-      "RecoilForce": 1.0,
+      "RecoilForce": 0,
       "ShootShake": [8, 10, 60],
       "Spread": 0.02,
       "ShootAnimationTime": 10,
@@ -139,15 +139,19 @@
         "superbwarfare:ap_cannon_shell"
       ],
       "SoundRadius": 32,
+      "SoundInfo": {
+        "Fire1P": "superbwarfare:bmp_2_cannon_fire_1p",
+        "Fire3P": "superbwarfare:bmp_2_cannon_fire_3p"
+      },
       "ShootPos": {
         "Transform": "Barrel",
-        "Positions": [[0, -3.25, -5.5]],
+        "Positions": [[0.0196, 0.043525, 1.854931]],
         "Directions": ["Barrel"]
       }
     }
   },
   "EngineType": "Wheel",
-  "EngineSound": "toyota_idle",
+  "EngineSound": "superbwarfare:truck_engine",
   "EngineInfo": {
     "Buoyancy": 0,
     "EnergyCostRate": 96,

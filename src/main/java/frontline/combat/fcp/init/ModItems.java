@@ -15,6 +15,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> RUSSIAN_TAB_ICON = REGISTRY.register("russian_tab_icon", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> AMERICAN_TAB_ICON = REGISTRY.register("american_tab_icon", () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> DELICIOUS_SNACK = REGISTRY.register("delicious_snack",
             () -> new Item(new Item.Properties().food(ModFoods.DELICIOUS_SNACK)));
 
