@@ -1,19 +1,19 @@
 ﻿{
-  "ID": "fcp:littlebird",
+  "ID": "fcp:littlebird_armed",
   "MaxHealth": 280,
   "MaxEnergy": 8000000,
   "OBB": [
     {"Size": [1.1, 1.2, 2.85], "Position": [0, 2.0, -0.5]},
     {"Size": [0.25, 0.25, 2.25], "Position": [0, 2.45, -5.55]},
     {"Size": [0.4, 1.15, 0.5], "Position": [0.1, 2.65, -7.8], "Part":  "SecondaryEngine"},
-    {"Size": [0.4, 0.35, 1.25], "Position": [0, 3.55, -1.4], "Part":  "MainEngine"}
+    {"Size": [0.4, 0.35, 1.25], "Position": [0, 3.55, -1.4], "Part":  "MainEngine"},
   ],
   "Seats": [
     {
       "Transform": "Vehicle",
       "Position": [0.5, 1, 0.8],
       "Sensitivity": [0, 0, 0],
-      "Weapons": ["Empty"],
+      "Weapons": ["Cannon","Rocket"],
       "CameraPos": {
         "UseAircraftCamera": true,
         "AircraftCameraPos": [-3, 3, -10]
@@ -29,48 +29,9 @@
         "UseAircraftCamera": true,
         "AircraftCameraPos": [-3, 3, -10]
       },
-      "DismountInfo": {"Transform": "Vehicle", "Position": [-2, 0.5, 1]},
       "BanHand": true,
-      "MinPitch": -50,
-      "MaxPitch": 15,
-      "MinYaw": -75,
-      "MaxYaw": 75
-    },
-    {
-      "Transform": "Vehicle",
-      "Position": [1.4, 0.5, 0.4],
-      "Orientation": -90,
-      "DismountInfo": {"Transform": "Vehicle", "Position": [2, 0.5, 1]},
-      "MinPitch": -50,
-      "MaxPitch": 15,
-      "MinYaw": -75,
-      "MaxYaw": 75
-    },
-    {
-      "Transform": "Vehicle",
-      "Position": [-1.4, 0.5, 0.4],
-      "Orientation": 90,
-      "DismountInfo": {"Transform": "Vehicle", "Position": [2, 0.5, 1]},
-      "MinPitch": -50,
-      "MaxPitch": 15,
-      "MinYaw": -75,
-      "MaxYaw": 75
-    },
-    {
-      "Transform": "Vehicle",
-      "Position": [1.4, 0.5, -0.8],
-      "Orientation": -90,
-      "DismountInfo": {"Transform": "Vehicle", "Position": [2, 0.5, 1]},
-      "MinPitch": -50,
-      "MaxPitch": 15,
-      "MinYaw": -75,
-      "MaxYaw": 75
-    },
-    {
-      "Transform": "Vehicle",
-      "Position": [-1.4, 0.5, -0.8],
-      "Orientation": 90,
-      "DismountInfo": {"Transform": "Vehicle", "Position": [2, 0.5, 1]},
+      "DismountInfo": {"Transform": "Vehicle", "Position": [-2, 0.5, 1]},
+
       "MinPitch": -50,
       "MaxPitch": 15,
       "MinYaw": -75,
@@ -83,6 +44,60 @@
       "Damage": 0,
       "Range": 0,
       "Cooldown": 0
+    },
+    "Rocket": {
+      "AmmoType": "superbwarfare:small_rocket",
+      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/small_rocket.png",
+      "DefaultZoom": 2,
+      "DefaultFireMode": "Auto",
+      "AvailableFireModes": "Auto",
+      "Magazine": 8,
+      "EmptyReloadTime": 80,
+      "Projectile": "superbwarfare:small_rocket",
+      "Spread": 0.3,
+      "Name": "weapon.vvp.hydra_rocket",
+      "RPM": 400,
+      "Damage": 80,
+      "ExplosionDamage": 40,
+      "ExplosionRadius": 5,
+      "Gravity": 0.02,
+      "Velocity": 16,
+      "SoundInfo": {
+        "Fire1P": "superbwarfare:small_rocket_fire_1p",
+        "Fire3P": "superbwarfare:small_rocket_fire_3p"
+      },
+      "ShootPos": {
+        "Transform": "Vehicle",
+        "Positions": [[2.225, 0.75, 0.75],[-2.225, 0.75, 0.75]],
+        "Directions": [[0, 0.02, 1]]
+      },
+      "Crosshair": "@Empty",
+      "SoundRadius": 12
+    },
+    "Cannon": {
+      "DefaultFireMode": "Auto",
+      "AvailableFireModes": "Auto",
+      "Projectile": "superbwarfare:projectile",
+      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/cannon_20mm.png",
+      "DefaultZoom": 3,
+      "RPM": 2000,
+      "Velocity": 30,
+      "Damage": 35,
+      "HeatPerShoot": 1,
+      "NaturalCooldown": 1,
+      "Spread": 0.3,
+      "Name": "weapon.vvp.m197_20mm",
+      "SoundInfo": {
+        "Fire1P": "superbwarfare:coax_fire_1p",
+        "Fire3P": "superbwarfare:coax_fire_1p"
+      },
+      "ShootPos": {
+        "Transform": "Vehicle",
+        "Positions": [[1.525, 0.85, 1.3],[-1.525, 0.85, 1.3]],
+        "Directions": [[0, 0.02, 1]]
+      },
+      "Crosshair": "@Empty",
+      "SoundRadius": 12
     }
   },
   "EngineType": "Helicopter",

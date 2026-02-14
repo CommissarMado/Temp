@@ -41,6 +41,7 @@ public class ModTabs {
             .displayItems((parameters, output) -> {
                 output.accept(ContainerBlockItem.createInstance(ModEntities.STRYKER_DRAGOON.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.LITTLEBIRD.get()));
+                output.accept(ContainerBlockItem.createInstance(ModEntities.LITTLEBIRD_ARMED.get()));
             }).build());
 
     @Mod.EventBusSubscriber(modid = FCP.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
