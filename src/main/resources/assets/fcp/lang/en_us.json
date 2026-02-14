@@ -15,6 +15,8 @@
   "weapon.fcp.hydra_rocket": "Hydra-70 ",
   "weapon.fcp.2a28_grom": "2A28 Grom",
   "weapon.fcp.m134_minigun": "M134 Minigun",
+  "weapon.fcp.malyutka": "9M14 Malyutka",
+  "weapon.fcp.coaxial_pkt": "Coaxial PKT Machine Gun",
 
   "//": "========================= Foods =========================",
   "item.fcp.delicious_snack": "Box of Crayons",

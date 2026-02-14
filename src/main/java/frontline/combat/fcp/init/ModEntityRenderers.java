@@ -1,6 +1,7 @@
 package frontline.combat.fcp.init;
 
 import frontline.combat.fcp.FCP;
+import frontline.combat.fcp.client.renderer.Bmp.BMP1Renderer;
 import frontline.combat.fcp.client.renderer.Littlebird.LittlebirdArmedRenderer;
 import frontline.combat.fcp.client.renderer.Littlebird.LittlebirdRenderer;
 import frontline.combat.fcp.client.renderer.Stryker.StrykerDragoonRenderer;
@@ -31,5 +32,7 @@ public class ModEntityRenderers {
 
         event.registerEntityRenderer(ModEntities.LITTLEBIRD.get(), LittlebirdRenderer::new);
         event.registerEntityRenderer(ModEntities.LITTLEBIRD_ARMED.get(), LittlebirdArmedRenderer::new);
+
+        event.registerEntityRenderer(ModEntities.BMP1.get(), BMP1Renderer::new);
     }
 }

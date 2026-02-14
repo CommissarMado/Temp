@@ -79,10 +79,11 @@
   ],
   "Weapons": {
     "Empty": {
-      "Type": "Empty",
-      "Damage": 0,
-      "Range": 0,
-      "Cooldown": 0
+      "Name": "",
+      "Crosshair": "@Empty",
+      "RPM": 0,
+      "Magazine": 0,
+      "Damage": 0
     }
   },
   "EngineType": "Helicopter",

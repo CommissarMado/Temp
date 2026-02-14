@@ -40,10 +40,11 @@
   ],
   "Weapons": {
     "Empty": {
-      "Type": "Empty",
-      "Damage": 0,
-      "Range": 0,
-      "Cooldown": 0
+      "Name": "",
+      "Crosshair": "@Empty",
+      "RPM": 0,
+      "Magazine": 0,
+      "Damage": 0
     },
     "Rocket": {
       "AmmoType": "superbwarfare:small_rocket",
@@ -82,10 +83,11 @@
       "DefaultZoom": 3,
       "RPM": 2000,
       "Velocity": 30,
-      "Damage": 35,
+      "Damage": 5,
       "HeatPerShoot": 1,
       "NaturalCooldown": 1,
       "Spread": 0.3,
+      "ArmorPiercing": 0.01,
       "Name": "weapon.fcp.m134_minigun",
       "SoundInfo": {
         "Fire1P": "superbwarfare:coax_fire_1p",
