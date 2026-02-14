@@ -6,7 +6,7 @@
     {"Size": [1.1, 1.2, 2.85], "Position": [0, 2.0, -0.5]},
     {"Size": [0.25, 0.25, 2.25], "Position": [0, 2.45, -5.55]},
     {"Size": [0.4, 1.15, 0.5], "Position": [0.1, 2.65, -7.8], "Part":  "SecondaryEngine"},
-    {"Size": [0.4, 0.35, 1.25], "Position": [0, 3.55, -1.4], "Part":  "MainEngine"},
+    {"Size": [0.4, 0.35, 1.25], "Position": [0, 3.55, -1.4], "Part":  "MainEngine"}
   ],
   "Seats": [
     {
@@ -55,7 +55,7 @@
       "EmptyReloadTime": 80,
       "Projectile": "superbwarfare:small_rocket",
       "Spread": 0.3,
-      "Name": "weapon.vvp.hydra_rocket",
+      "Name": "weapon.fcp.hydra_rocket",
       "RPM": 400,
       "Damage": 80,
       "ExplosionDamage": 40,
@@ -86,7 +86,7 @@
       "HeatPerShoot": 1,
       "NaturalCooldown": 1,
       "Spread": 0.3,
-      "Name": "weapon.vvp.m197_20mm",
+      "Name": "weapon.fcp.m134_minigun",
       "SoundInfo": {
         "Fire1P": "superbwarfare:coax_fire_1p",
         "Fire3P": "superbwarfare:coax_fire_1p"

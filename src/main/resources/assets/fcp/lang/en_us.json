@@ -14,11 +14,13 @@
   "//": "======================== Weapons ========================",
   "weapon.fcp.hydra_rocket": "Hydra-70 ",
   "weapon.fcp.2a28_grom": "2A28 Grom",
+  "weapon.fcp.m134_minigun": "M134 Minigun",
 
   "//": "========================= Foods =========================",
   "item.fcp.delicious_snack": "Box of Crayons",
 
   "//": "===================== American Tab ======================",
   "americantab.fc_american_tab": "[FC] American Vehicles",
-  "entity.fcp.littlebird": "UH-6 Littlebird"
+  "entity.fcp.littlebird": "UH-6 Littlebird",
+  "entity.fcp.littlebird_armed": "AH-6 Littlebird"
 }
