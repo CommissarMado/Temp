@@ -1,29 +1,42 @@
 ﻿{
-  "ID": "fcp:bmp1",
+  "ID": "fcp:t64",
   "MaxHealth": 300,
   "MaxEnergy": 5000000,
-  "TurretPos": [0.043375, 2.060769, -0.309344],
+  "TurretPos": [0.0, 1.875, 0.0],
   "TurretTurnSpeed": [2.5, 2.5],
   "TurretPitchRange": [-10, 30],
-  "BarrelPos": [-0.036825, 0.184587, 0.878656],
+  "BarrelPos": [0.01345, 0.285563, 1.298763],
   "OBB": [
     {
-      "Size": [0.25, 0.75, 3.5],
-      "Position": [1.6, 0.75, -0.05],
+      "Size": [0.5, 0.75, 4.1],
+      "Position": [1.85, 0.75, 0.35],
       "Part": "WheelLeft"
     },
     {
-      "Size": [0.25, 0.75, 3.5],
-      "Position": [-1.6, 0.75, -0.05],
+      "Size": [0.55, 0.25, 4.2],
+      "Position": [1.9, 1.65, 0.35]
+    },
+    {
+      "Size": [0.5, 0.75, 4.1],
+      "Position": [-1.85, 0.75, 0.35],
       "Part": "WheelRight"
     },
     {
-      "Size": [1.6, 0.75, 4.15],
-      "Position": [0, 1.25, 0.25]
+      "Size": [0.55, 0.25, 4.2],
+      "Position": [-1.9, 1.65, 0.35]
     },
     {
-      "Size": [1.0, 0.25, 1],
-      "Position": [0, 0.25, 0],
+      "Size": [1.15, 0.25, 0.9],
+      "Position": [-0.1, 2, -2.5],
+      "Part": "MainEngine"
+    },
+    {
+      "Size": [1.35, 0.75, 4.15],
+      "Position": [0, 1.25, 0.5]
+    },
+    {
+      "Size": [1.8, 0.5, 1.8],
+      "Position": [0, 0.5, 0],
       "Part": "Turret",
       "Transform": "Turret",
       "Rotation": "Turret"
@@ -33,12 +46,12 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
-      "Weapons": ["Cannon","malyutka","Coax"],
+      "Weapons": ["Cannon","Coax"],
       "BanHand": true,
       "CameraPos": {
         "UseFixedCameraPos": true,
         "Transform": "Barrel",
-        "Position": [0.36845, 0.254644, -0.194312],
+        "Position": [0.61155, 0.464437, 0.013737],
         "Rotation": "Barrel"
       },
       "Position": [0.50, 0.30, 0.25],
@@ -61,56 +74,53 @@
     "EngineSoundVolume" : 1.0
   },
   "Weapons": {
-    "malyutka": {
-      "DefaultFireMode": "Semi",
-      "AvailableFireModes": "Semi",
-      "DefaultZoom": 3,
-      "Name": "weapon.fcp.malyutka",
-      "AmmoType": "superbwarfare:medium_anti_ground_missile",
-      "Projectile": "superbwarfare:wire_guide_missile",
-      "Magazine": 1,
-      "EmptyReloadTime": 200,
-      "Damage": 400,
-      "ExplosionDamage": 80,
-      "ExplosionRadius": 6,
-      "Velocity": 3,
-      "ShootPos": {"Transform": "Barrel", "Positions": [[-0.017569, 0.522662, 1.425669]], "Directions": ["Barrel"]},
-      "Crosshair": "@VehicleCommonMissile",
-      "CrosshairColor": "0x00FF66",
-      "SoundInfo": {"Fire1P": "superbwarfare:bmp_2_missile_fire_1p", "Fire3P": "superbwarfare:bmp_2_missile_fire_3p"},
-      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/missile_9m113.png"
-    },
     "Cannon": {
       "Icon": "fcp:textures/screens/vehicle_weapon/ap_shell.png",
       "DefaultFireMode": "Semi",
       "AvailableFireModes": "Semi",
-      "Projectile": "superbwarfare:small_cannon_shell",
+      "Projectile": "superbwarfare:cannon_shell",
       "IsArmorPiercingProjectile": true,
       "DefaultZoom": 3,
       "Magazine": 1,
-      "EmptyReloadTime": 120,
-      "Velocity": 20,
-      "Damage": 200,
+      "EmptyReloadTime": 200,
+      "Velocity": 40,
+      "Damage": 500,
       "ExplosionDamage": 80,
-      "ExplosionRadius": 4,
+      "ExplosionRadius": 6,
       "RecoilTime": 42,
       "RecoilForce": 0,
       "Spread": 0.02,
       "ShootAnimationTime": 10,
-      "Crosshair": "@VehicleCommonGun",
+      "Crosshair": "@VehicleUsTank",
       "CrosshairColor": "0x00ff66",
-      "Name": "weapon.fcp.2a28_grom",
+      "Name": "weapon.fcp.2a26_125mm",
       "AmmoType": [
-        "superbwarfare:ap_cannon_shell"
+        "superbwarfare:small_rocket",
+        {
+          "Ammo": "superbwarfare:small_rocket",
+          "Override": {
+            "Icon": "fcp:textures/screens/vehicle_weapon/he_shell.png",
+            "IsArmorPiercingProjectile": false,
+            "IsHighExplosiveProjectile": true,
+            "Velocity": 25,
+            "Damage": 250,
+            "ExplosionDamage": 120,
+            "ExplosionRadius": 10,
+            "Name": "weapon.fcp.2a26_125mm"
+          }
+        }
       ],
       "SoundRadius": 32,
       "SoundInfo": {
-        "Fire1P": "superbwarfare:bmp_2_cannon_fire_1p",
-        "Fire3P": "superbwarfare:bmp_2_cannon_fire_3p"
-      },
+      "Fire1P": "superbwarfare:plz_05_fire_1p",
+      "Fire3P": "superbwarfare:plz_05_fire_3p",
+      "Fire3PFar": "superbwarfare:plz_05_far",
+      "Fire3PVeryFar": "superbwarfare:plz_05_veryfar",
+      "VehicleReload": "superbwarfare:plz_05_reload"
+    },
       "ShootPos": {
         "Transform": "Barrel",
-        "Positions": [[0.0247, 0.004644, 1.868188]],
+        "Positions": [[0.060325, 0.051188, 7.013737]],
         "Directions": ["Barrel"]
       }
     },
@@ -131,7 +141,7 @@
       "RecoilForce": 0.05,
       "ShootAnimationTime": 1,
       "Spread": 0.25,
-      "Crosshair": "@VehicleCommonGun",
+      "Crosshair": "@Empty",
       "CrosshairColor": "0x66FF00",
       "Name": "weapon.fcp.coaxial_pkt",
       "SoundInfo": {
@@ -143,7 +153,7 @@
       "Icon": "fcp:textures/screens/vehicle_weapon/12_7mm.png",
       "ShootPos": {
         "Transform": "Barrel",
-        "Positions": [[-0.467737, 0.003569, 2.497287]],
+        "Positions": [[-0.511887, 0.041813, 0.576237]],
         "Directions": ["Barrel"]
       }
     }

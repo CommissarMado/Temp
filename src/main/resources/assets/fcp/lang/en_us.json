@@ -5,6 +5,8 @@
   "entity.fcp.toyota_hilux_rocket_pod": "Toyota Hilux With Rocket Pod",
   "entity.fcp.toyota_hilux_bmp": "Toyota Hilux With BMP",
   "entity.fcp.toyota_hilux_spg9": "Toyota Hilux With SPG-9",
+  "entity.fcp.bmp1": "BMP-1",
+  "entity.fcp.t64": "T64",
 
   "//": "====================== Russian Tab ======================",
   "russiantab.fc_russian_tab": "[FC] Russian Vehicles",
@@ -17,6 +19,9 @@
   "weapon.fcp.m134_minigun": "M134 Minigun",
   "weapon.fcp.malyutka": "9M14 Malyutka",
   "weapon.fcp.coaxial_pkt": "Coaxial PKT Machine Gun",
+  "weapon.fcp.2a26_125mm": "2A26 125mm Cannon",
+  "weapon.fcp.m68a2_105mm": "M68A2 105mm Cannon",
+  "weapon.fcp.m2_hb": "M2 HB",
 
   "//": "========================= Foods =========================",
   "item.fcp.delicious_snack": "Box of Crayons",
@@ -24,5 +29,8 @@
   "//": "===================== American Tab ======================",
   "americantab.fc_american_tab": "[FC] American Vehicles",
   "entity.fcp.littlebird": "MH-6 Littlebird",
-  "entity.fcp.littlebird_armed": "AH-6 Littlebird"
+  "entity.fcp.littlebird_armed": "AH-6 Littlebird",
+  "entity.fcp.stryker_mgs": "Stryker MGS",
+  "entity.fcp.stryker_dragoon": "Stryker Dragoon",
+  "entity.fcp.stryker_m2": "Stryker M2"
 }

@@ -25,6 +25,7 @@ public class ModTabs {
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_ROCKET_POD.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_BMP.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.TOYOTA_HILUX_SPG9.get()));
+
                 output.accept(ContainerBlockItem.createInstance(ModEntities.BMP1.get()));
             }).build());
 
@@ -41,6 +42,9 @@ public class ModTabs {
             .title(Component.translatable("americantab.fc_american_tab"))
             .displayItems((parameters, output) -> {
                 output.accept(ContainerBlockItem.createInstance(ModEntities.STRYKER_DRAGOON.get()));
+                output.accept(ContainerBlockItem.createInstance(ModEntities.STRYKER_MGS.get()));
+                output.accept(ContainerBlockItem.createInstance(ModEntities.STRYKER_M2.get()));
+
                 output.accept(ContainerBlockItem.createInstance(ModEntities.LITTLEBIRD.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.LITTLEBIRD_ARMED.get()));
             }).build());

@@ -14,6 +14,8 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> SPRAY = register("spray");
 
+    public static final RegistryObject<SoundEvent> BMP1_FIRE_1P = register("bmp1_fire_1p");
+
     private static RegistryObject<SoundEvent> register(String name) {
         return REGISTRY.register(name, () -> SoundEvent.createVariableRangeEvent(FCP.loc(name)));
     }

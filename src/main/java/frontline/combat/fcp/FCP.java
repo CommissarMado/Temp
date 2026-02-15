@@ -1,11 +1,8 @@
 package frontline.combat.fcp;
 
 import com.mojang.logging.LogUtils;
-import frontline.combat.fcp.init.ModEntities;
-import frontline.combat.fcp.init.ModItems;
-import frontline.combat.fcp.init.ModSounds;
-import frontline.combat.fcp.init.ModTabs;
 import frontline.combat.fcp.network.FCPNetwork;
+import frontline.combat.fcp.init.*;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -54,7 +51,7 @@ public class FCP {
                 String entityType = tag.getString("EntityType");
                 if (entityType.startsWith(MODID + ":vdv_")) {
                     // event.getToolTip().add(Component.translatable("tooltip.wmp.model_author"));
-                    event.getToolTip().add(Component.translatable("tooltip.vvp.usage_restriction").withStyle(net.minecraft.ChatFormatting.RED));
+                    event.getToolTip().add(Component.translatable("tooltip.fcp.usage_restriction").withStyle(net.minecraft.ChatFormatting.RED));
                 }
             }
         }

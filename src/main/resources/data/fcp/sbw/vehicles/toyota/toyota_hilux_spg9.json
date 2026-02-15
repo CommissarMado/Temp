@@ -161,7 +161,7 @@
       "Projectile": "superbwarfare:small_cannon_shell",
       "Spread": 0.3,
       "Name": "weapon.fcp.hydra_rocket",
-      "Crosshair": "@fcp:crosshair/rocket_launcher",
+      "Crosshair": "@VehicleCommonMissile",
       "CrosshairColor": "0x00ff66",
       "RPM": 400,
       "Damage": 200,

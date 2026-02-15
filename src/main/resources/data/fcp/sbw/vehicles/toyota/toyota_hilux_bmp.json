@@ -131,17 +131,14 @@
       "RecoilForce": 0,
       "Spread": 0.02,
       "ShootAnimationTime": 10,
-      "Crosshair": "@Empty",
+      "Crosshair": "@VehicleUsTank",
       "CrosshairColor": "0x00ff66",
       "Name": "weapon.fcp.2a28_grom",
       "AmmoType": [
         "superbwarfare:ap_cannon_shell"
       ],
       "SoundRadius": 32,
-      "SoundInfo": {
-        "Fire1P": "superbwarfare:bmp_2_cannon_fire_1p",
-        "Fire3P": "superbwarfare:bmp_2_cannon_fire_3p"
-      },
+      "SoundInfo": {"Fire1P": "superbwarfare:bmp_2_missile_fire_1p", "Fire3P": "superbwarfare:bmp_2_missile_fire_3p"},
       "ShootPos": {
         "Transform": "Barrel",
         "Positions": [[0.0196, 0.043525, 1.854931]],

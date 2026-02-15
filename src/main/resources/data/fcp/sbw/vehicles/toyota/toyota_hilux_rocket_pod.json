@@ -175,23 +175,11 @@
       },
       "ShootPos": {
         "Transform": "Vehicle",
-        "Positions": [
-          [
-            0,
-            3.175,
-            -1
-          ]
-        ],
-        "Directions": [
-          [
-            0,
-            0.02,
-            1
-          ]
-        ]
+        "Positions": [[0, 3.175, -1]],
+        "Directions": [[0, 0.02, 1]]
       }
     }
-    },
+  },
   "ThirdPersonCameraPos": [0, 1, 5],
   "VehicleIcon": "superbwarfare:textures/vehicle_icon/humvee_icon.png",
   "ContainerIcon": "fcp:textures/gui/vehicle/type/land_ter.png",
@@ -206,7 +194,7 @@
   },
   "EngineSound": "superbwarfare:truck_engine",
   "HornSound": "superbwarfare:truck_horn",
-  "HudType": "@Empty",
+  "HudType": "@Land",
   "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],
   "InertiaRotateRate": 1.8
 }

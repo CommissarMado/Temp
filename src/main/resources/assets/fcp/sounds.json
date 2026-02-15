@@ -1,0 +1,15 @@
+﻿{
+  "spray": {
+    "sounds": [
+      {
+        "name": "fcp:spray",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_fire_1p": {
+    "sounds": [
+      "fcp:bmp1_cannon_fire_1p"
+    ]
+  }
+}
