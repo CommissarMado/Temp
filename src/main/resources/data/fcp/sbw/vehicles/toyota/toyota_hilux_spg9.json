@@ -152,15 +152,17 @@
   "Weapons": {
     "Rocket": {
       "AmmoType": "superbwarfare:small_rocket",
-      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/small_rocket.png",
+      "Icon": "fcp:textures/screens/vehicle_weapon/pg_9v.png",
+      "IsArmorPiercingProjectile": true,
+      "IsHighExplosiveProjectile": true,
       "DefaultZoom": 2,
       "DefaultFireMode": "Semi",
       "AvailableFireModes": "Semi",
       "Magazine": 1,
-      "EmptyReloadTime": 180,
+      "EmptyReloadTime": 70,
       "Projectile": "superbwarfare:small_cannon_shell",
       "Spread": 0.3,
-      "Name": "weapon.fcp.hydra_rocket",
+      "Name": "weapon.fcp.spg9",
       "Crosshair": "@VehicleCommonMissile",
       "CrosshairColor": "0x00ff66",
       "RPM": 400,
@@ -170,13 +172,14 @@
       "Gravity": 0.02,
       "Velocity": 16,
       "SoundInfo": {
-        "Fire1P": "superbwarfare:small_rocket_fire_1p",
-        "Fire3P": "superbwarfare:small_rocket_fire_3p"
+        "Fire1P": "fcp:spg9_fire_1p",
+        "Fire3P": "fcp:spg9_fire_3p",
+        "VehicleReload": "fcp:spg9_reload"
       },
       "ShootPos": {
         "Transform": "Barrel",
         "Positions": [[-0.006081, -0.003519, 2.734625]],
-        "Directions": [[0, 0.02, 1]]
+        "Directions": [[0, 0, 1]]
       }
     }
   },

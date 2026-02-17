@@ -70,7 +70,6 @@ public abstract class CamoVehicleBase extends GeoVehicleEntity implements ICamoV
             player.swing(hand);
 
             return InteractionResult.SUCCESS;
-
         }
         return super.interact(player, hand);
     }

@@ -2,9 +2,9 @@ package frontline.combat.fcp.init;
 
 import frontline.combat.fcp.FCP;
 import frontline.combat.fcp.client.renderer.Bmp.BMP1Renderer;
+import frontline.combat.fcp.client.renderer.Lav.Lav25Renderer;
 import frontline.combat.fcp.client.renderer.Littlebird.LittlebirdArmedRenderer;
 import frontline.combat.fcp.client.renderer.Littlebird.LittlebirdRenderer;
-import frontline.combat.fcp.client.renderer.Stryker.StrykerDragoonRenderer;
 import frontline.combat.fcp.client.renderer.Stryker.StrykerM2Renderer;
 import frontline.combat.fcp.client.renderer.Stryker.StrykerMGSRenderer;
 import frontline.combat.fcp.client.renderer.T64.T64Renderer;
@@ -31,7 +31,6 @@ public class ModEntityRenderers {
         event.registerEntityRenderer(ModEntities.UAZ.get(), UAZRenderer::new);
         event.registerEntityRenderer(ModEntities.UAZ_DSHKA.get(), UAZDSHKARenderer::new);
 
-        event.registerEntityRenderer(ModEntities.STRYKER_DRAGOON.get(), StrykerDragoonRenderer::new);
         event.registerEntityRenderer(ModEntities.STRYKER_MGS.get(), StrykerMGSRenderer::new);
         event.registerEntityRenderer(ModEntities.STRYKER_M2.get(), StrykerM2Renderer::new);
 
@@ -39,6 +38,8 @@ public class ModEntityRenderers {
         event.registerEntityRenderer(ModEntities.LITTLEBIRD_ARMED.get(), LittlebirdArmedRenderer::new);
 
         event.registerEntityRenderer(ModEntities.BMP1.get(), BMP1Renderer::new);
+
+        event.registerEntityRenderer(ModEntities.LAV25.get(), Lav25Renderer::new);
 
         event.registerEntityRenderer(ModEntities.T64.get(), T64Renderer::new);
     }

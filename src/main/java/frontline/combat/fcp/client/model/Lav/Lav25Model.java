@@ -1,12 +1,12 @@
-package frontline.combat.fcp.client.model.Stryker;
+package frontline.combat.fcp.client.model.Lav;
 
 import com.atsuishio.superbwarfare.client.model.entity.VehicleModel;
-import frontline.combat.fcp.entity.vehicle.Stryker.StrykerDragoonEntity;
-import frontline.combat.fcp.entity.vehicle.Uaz.UAZEntity;
+import frontline.combat.fcp.entity.vehicle.Lav.Lav25Entity;
+import frontline.combat.fcp.entity.vehicle.Stryker.StrykerM2Entity;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;
 
-public class StrykerDragoonModel extends VehicleModel<StrykerDragoonEntity> {
+public class Lav25Model extends VehicleModel<Lav25Entity> {
 
     @Override
     public boolean hideForTurretControllerWhileZooming() {
@@ -15,7 +15,7 @@ public class StrykerDragoonModel extends VehicleModel<StrykerDragoonEntity> {
 
 
     @Override
-    public @Nullable VehicleModel.TransformContext<StrykerDragoonEntity> collectTransform(String boneName) {
+    public @Nullable VehicleModel.TransformContext<Lav25Entity> collectTransform(String boneName) {
         return switch (boneName) {
 
             case "WheelL0Turn", "WheelR0Turn", "WheelL1Turn", "WheelR1Turn" -> (bone, vehicle, state) -> {

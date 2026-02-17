@@ -14,7 +14,7 @@
   "entity.fcp.uaz_dshka": "UAZ With DSHKA",
 
   "//": "======================== Weapons ========================",
-  "weapon.fcp.hydra_rocket": "Hydra-70 ",
+  "weapon.fcp.ub32": "UB-32",
   "weapon.fcp.2a28_grom": "2A28 Grom",
   "weapon.fcp.m134_minigun": "M134 Minigun",
   "weapon.fcp.malyutka": "9M14 Malyutka",
@@ -22,6 +22,7 @@
   "weapon.fcp.2a26_125mm": "2A26 125mm Cannon",
   "weapon.fcp.m68a2_105mm": "M68A2 105mm Cannon",
   "weapon.fcp.m2_hb": "M2 HB",
+  "weapon.fcp.spg9": "SPG-9",
 
   "//": "========================= Foods =========================",
   "item.fcp.delicious_snack": "Box of Crayons",

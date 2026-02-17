@@ -1,8 +1,8 @@
-package frontline.combat.fcp.entity.vehicle.Stryker;
+package frontline.combat.fcp.entity.vehicle.Lav;
 
 import com.atsuishio.superbwarfare.entity.vehicle.damage.DamageModifier;
+import frontline.combat.fcp.entity.vehicle.Bmp.BMP1Entity;
 import frontline.combat.fcp.entity.vehicle.CamoVehicleBase;
-import frontline.combat.fcp.entity.vehicle.Uaz.UAZEntity;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -10,16 +10,19 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 
-public class StrykerDragoonEntity extends CamoVehicleBase {
+public class Lav25Entity extends CamoVehicleBase {
 
     private static final ResourceLocation[] CAMO_TEXTURES = {
-            new ResourceLocation("fcp", "textures/entity/stryker/stryker_1.png"),
-            new ResourceLocation("fcp", "textures/entity/stryker/stryker_2.png")
+            new ResourceLocation("fcp", "textures/entity/lav/lav25_camo1.png"),
+            new ResourceLocation("fcp", "textures/entity/lav/lav25_camo2.png"),
+            new ResourceLocation("fcp", "textures/entity/lav/lav25_camo3.png"),
+            new ResourceLocation("fcp", "textures/entity/lav/lav25_od.png"),
+            new ResourceLocation("fcp", "textures/entity/lav/lav25_tan.png")
     };
 
-    private static final String[] CAMO_NAMES = {"Base", "Z", "Ukraine", "Ukraine Medic", "Blue", "Orange", "Ruined"};
+    private static final String[] CAMO_NAMES = {"Flag", "No-Flag"};
 
-    private static final EntityDataAccessor<Float> STEERING_ANGLE = SynchedEntityData.defineId(StrykerDragoonEntity.class, EntityDataSerializers.FLOAT);
+    private static final EntityDataAccessor<Float> STEERING_ANGLE = SynchedEntityData.defineId(Lav25Entity.class, EntityDataSerializers.FLOAT);
 
     private float prevSteeringAngle = 0f;
 
@@ -27,7 +30,7 @@ public class StrykerDragoonEntity extends CamoVehicleBase {
 
     private float prevWheelRotation = 0f;
 
-    public StrykerDragoonEntity(EntityType<StrykerDragoonEntity> type, Level world) {super(type, world);}
+    public Lav25Entity(EntityType<Lav25Entity> type, Level world) {super(type, world);}
 
     @Override
     public ResourceLocation[] getCamoTextures() {return CAMO_TEXTURES;}
@@ -116,3 +119,4 @@ public class StrykerDragoonEntity extends CamoVehicleBase {
         wheelRotation += (float) (speed * 20f);
     }
 }
+

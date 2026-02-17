@@ -213,5 +213,61 @@
         "stream": false
       }
     ]
+  },
+  "spg9_reload": {
+    "sounds": [
+      {
+        "name": "fcp:toyota/spg-9/spg9_reload",
+        "stream": false
+      }
+    ]
+  },
+  "spg9_fire_1p": {
+    "sounds": [
+      {
+        "name": "fcp:toyota/spg-9/spg9_fire_1p",
+        "stream": false
+      }
+    ]
+  },
+  "spg9_fire_3p": {
+    "sounds": [
+      {
+        "name": "fcp:toyota/spg-9/spg9_fire_3p",
+        "stream": false
+      }
+    ]
+  },
+  "m2_fire_1p": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/m2/m2_fire_1p",
+        "stream": false
+      }
+    ]
+  },
+  "m2_fire_3p": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/m2/m2_fire_3p_close",
+        "stream": false
+      }
+    ]
+  },
+  "m2_fire_3p_far": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/m2/m2_fire_3p_far",
+        "stream": false
+      }
+    ]
+  },
+  "m2_reload": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/m2/m2_reload",
+        "stream": false
+      }
+    ]
   }
 }

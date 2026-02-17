@@ -162,7 +162,7 @@
       "EmptyReloadTime": 180,
       "Projectile": "superbwarfare:small_rocket",
       "Spread": 0.3,
-      "Name": "weapon.fcp.hydra_rocket",
+      "Name": "weapon.fcp.ub32",
       "RPM": 400,
       "Damage": 80,
       "ExplosionDamage": 40,

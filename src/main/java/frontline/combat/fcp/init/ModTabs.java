@@ -41,7 +41,6 @@ public class ModTabs {
             .icon(() -> new ItemStack(ModItems.AMERICAN_TAB_ICON.get()))
             .title(Component.translatable("americantab.fc_american_tab"))
             .displayItems((parameters, output) -> {
-                output.accept(ContainerBlockItem.createInstance(ModEntities.STRYKER_DRAGOON.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.STRYKER_MGS.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.STRYKER_M2.get()));
 
