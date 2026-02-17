@@ -132,8 +132,7 @@
     "All - 8"
   ],
   "DestroyInfo": {"ParticleType": "Giant", "ExplosionDamage": 350, "ExplosionRadius": 12, "CrashPassengers": true},
-  "VehicleIcon": "vvp:textures/vehicle_icon/cobra_icon.png",
-  "ContainerIcon": "vvp:textures/gui/vehicle/type/aircraft.png",
+  "ContainerIcon": "fcp:textures/gui/vehicle/type/air_us.png",
   "Type": "Helicopter",
   "HudType": "@Helicopter",
   "TerrainCompat": [[-1.4, 0, 3], [1.4, 0, 3],[-1.4, 0, 2.5],[1.4, 0, 2.5],[-1.4, 0, 2],[-1.4, 0, 2]]

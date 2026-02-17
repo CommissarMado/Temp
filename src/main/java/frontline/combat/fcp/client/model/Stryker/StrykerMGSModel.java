@@ -5,6 +5,8 @@ import frontline.combat.fcp.entity.vehicle.Stryker.StrykerDragoonEntity;
 import frontline.combat.fcp.entity.vehicle.Stryker.StrykerMGSEntity;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
+import software.bernie.geckolib.core.animation.AnimationState;
 
 public class StrykerMGSModel extends VehicleModel<StrykerMGSEntity> {
 
@@ -34,4 +36,4 @@ public class StrykerMGSModel extends VehicleModel<StrykerMGSEntity> {
             default -> super.collectTransform(boneName);
         };
     }
-}
+    }

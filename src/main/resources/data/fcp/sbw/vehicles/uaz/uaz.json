@@ -143,7 +143,6 @@
     "ExplosionRadius": 7
   },
   "ThirdPersonCameraPos": [0, 1, 5],
-  "VehicleIcon": "superbwarfare:textures/vehicle_icon/humvee_icon.png",
   "ContainerIcon": "fcp:textures/gui/vehicle/type/civ_rus.png",
   "Type": "Car",
   "CollisionLevel": {
@@ -155,7 +154,6 @@
     ]
   },
   "EngineSound": "superbwarfare:truck_engine",
-  "HornSound": "superbwarfare:truck_horn",
   "HudType": "@Empty",
   "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],
   "InertiaRotateRate": 1.8

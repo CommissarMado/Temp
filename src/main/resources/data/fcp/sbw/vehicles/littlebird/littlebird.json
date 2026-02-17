@@ -95,10 +95,10 @@
     "YawSpeed": 0.9,
     "RollSpeed": 0.7,
     "LiftSpeed": 0.95,
-    "EngineStartSound": "superbwarfare:ah_6_engine_start",
-    "EngineSoundVolume": 1.5
+    "EngineStartSound": "fcp:littlebird_engine_start",
+    "EngineSoundVolume": 5
   },
-  "EngineSound": "superbwarfare:ah_6_engine",
+  "EngineSound": "fcp:littlebird_engine_idle",
   "ThirdPersonCameraPos": [2.5, 3.5, 10],
   "UpStep": 1.1,
   "RotateOffsetHeight": 1.5,
@@ -116,8 +116,7 @@
     "All - 8"
   ],
   "DestroyInfo": {"ParticleType": "Giant", "ExplosionDamage": 350, "ExplosionRadius": 12, "CrashPassengers": true},
-  "VehicleIcon": "vvp:textures/vehicle_icon/cobra_icon.png",
-  "ContainerIcon": "vvp:textures/gui/vehicle/type/aircraft.png",
+  "ContainerIcon": "fcp:textures/gui/vehicle/type/air_us.png",
   "Type": "Helicopter",
   "HudType": "@Helicopter",
   "TerrainCompat": [[-1.4, 0, 3], [1.4, 0, 3],[-1.4, 0, 2.5],[1.4, 0, 2.5],[-1.4, 0, 2],[-1.4, 0, 2]]

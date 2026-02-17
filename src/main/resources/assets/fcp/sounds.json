@@ -9,7 +9,209 @@
   },
   "bmp1_fire_1p": {
     "sounds": [
-      "fcp:bmp1_cannon_fire_1p"
+      {
+        "name": "fcp:bmp1/cannon/bmp1_cannon_fire_1p",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_fire_3p": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/cannon/bmp1_cannon_fire_3p_close",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_fire_3p_far": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/cannon/bmp1_cannon_fire_3p_far",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_fire_3p_extrafar": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/cannon/bmp1_cannon_fire_3p_extrafar",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_malyutka_fire_1p": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/at3/bmp1_at3_fire_1p",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_malyutka_fire_3p": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/at3/bmp1_at3_fire_3p",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_malyutka_fire_3p_far": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/at3/bmp1_at3_fire_3p_far",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_cannon_reload": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/cannon/bmp1_cannon_reload",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_malyutka_reload": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/at3/bmp1_at3_reload",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_engine": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/bmp1_engine",
+        "stream": true
+      }
+    ]
+  },
+  "bmp1_into_cannon": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/change/bmp1_into_cannon",
+        "stream": false
+      }
+    ]
+  },
+  "bmp1_into_malyutka": {
+    "sounds": [
+      {
+        "name": "fcp:bmp1/change/bmp1_into_at3",
+        "stream": false
+      }
+    ]
+  },
+  "coax_equip": {
+    "sounds": [
+      {
+        "name": "fcp:coax/coax_equip",
+        "stream": false
+      }
+    ]
+  },
+  "russian_coax_1p": {
+    "sounds": [
+      {
+        "name": "fcp:coax/russian/coax_fire_1p",
+        "volume": 1.0,
+        "pitch": 1,
+        "stream": true
+      }
+    ]
+  },
+  "russian_coax_3p": {
+    "sounds": [
+      {
+        "name": "fcp:coax/russian/coax_fire_1p",
+        "volume": 1.0,
+        "pitch": 1,
+        "stream": true
+      }
+    ]
+  },
+  "russian_coax_3p_far": {
+    "sounds": [
+      {
+        "name": "fcp:coax/russian/coax_fire_3p",
+        "volume": 1.0,
+        "pitch": 1,
+        "stream": false
+      }
+    ]
+  },
+  "toyota_engine": {
+    "sounds": [
+      {
+        "name": "fcp:toyota/toyota_engine",
+        "stream": true
+      }
+    ]
+  },
+  "littlebird_engine_start": {
+    "sounds": [
+      {
+        "name": "fcp:littlebird/littlebird_engine_start",
+        "stream": false,
+        "volume": 0.9
+      }
+    ]
+  },
+    "littlebird_engine_idle": {
+        "sounds": [
+        {
+            "name": "fcp:littlebird/littlebird_engine_idle",
+            "stream": true
+        }
+        ]
+    },
+  "stryker_engine": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/stryker_engine",
+        "stream": true
+      }
+    ]
+  },
+  "stryker_mgs_fire_1p": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/mgs/cannon/mgs_fire_1p",
+        "stream": false
+      }
+    ]
+  },
+  "stryker_mgs_fire_3p": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/mgs/cannon/mgs_fire_3p_close",
+        "stream": false
+      }
+    ]
+  },
+  "stryker_mgs_fire_3p_far": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/mgs/cannon/mgs_fire_3p_mid",
+        "stream": false
+      }
+    ]
+  },
+  "stryker_mgs_fire_3p_extrafar": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/mgs/cannon/mgs_fire_3p_far",
+        "stream": false
+      }
+    ]
+  },
+  "stryker_mgs_reload": {
+    "sounds": [
+      {
+        "name": "fcp:stryker/mgs/cannon/mgs_reload",
+        "stream": false
+      }
     ]
   }
 }

@@ -1,6 +1,7 @@
 package frontline.combat.fcp.init;
 
 import frontline.combat.fcp.FCP;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,12 +15,47 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> SPRAY = register("spray");
 
+    // BMP-1
     public static final RegistryObject<SoundEvent> BMP1_FIRE_1P = register("bmp1_fire_1p");
+    public static final RegistryObject<SoundEvent> BMP1_FIRE_3P = register("bmp1_fire_3p");
+    public static final RegistryObject<SoundEvent> BMP1_FIRE_3P_FAR = register("bmp1_fire_3p_far");
+    public static final RegistryObject<SoundEvent> BMP1_FIRE_3P_EXTRAFAR = register("bmp1_fire_3p_extrafar");
+    public static final RegistryObject<SoundEvent> BMP1_MALYUTKA_FIRE_1P = register("bmp1_malyutka_fire_1p");
+    public static final RegistryObject<SoundEvent> BMP1_MALYUTKA_FIRE_3P = register("bmp1_malyutka_fire_3p");
+    public static final RegistryObject<SoundEvent> BMP1_MALYUTKA_FIRE_3P_FAR = register("bmp1_malyutka_fire_3p_far");
+    public static final RegistryObject<SoundEvent> BMP1_CANNON_RELOAD = register("bmp1_cannon_reload");
+    public static final RegistryObject<SoundEvent> BMP1_MALYUTKA_RELOAD = register("bmp1_malyutka_reload");
+    public static final RegistryObject<SoundEvent> BMP1_ENGINE = register("bmp1_engine");
+    public static final RegistryObject<SoundEvent> BMP1_INTO_CANNON = register("bmp1_into_cannon");
+    public static final RegistryObject<SoundEvent> BMP1_INTO_MALYUTKA = register("bmp1_into_malyutka");
 
+    // === Coax's ===
+    public static final RegistryObject<SoundEvent> COAX_EQUIP = register("coax_equip");
+
+    // Russian Coax
+    public static final RegistryObject<SoundEvent> RUSSIAN_COAX__1P = register("russian_coax_1p");
+    public static final RegistryObject<SoundEvent> RUSSIAN_COAX_3P = register("russian_coax_3p");
+    public static final RegistryObject<SoundEvent> RUSSIAN_COAX_3P_FAR = register("russian_coax_3p_far");
+
+    // Toyota's
+    public static final RegistryObject<SoundEvent> TOYOTA_ENGINE = register("toyota_engine");
     private static RegistryObject<SoundEvent> register(String name) {
-        return REGISTRY.register(name, () -> SoundEvent.createVariableRangeEvent(FCP.loc(name)));
+        return REGISTRY.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fcp", name)));
     }
 
+    // Littlebird's
+    public static final RegistryObject<SoundEvent> LITTLEBIRD_ENGINE_IDLE = register("littlebird_engine_idle");
+    public static final RegistryObject<SoundEvent> LITTLEBIRD_ENGINE_START = register("littlebird_engine_start");
+
+    // Stryker's
+    public static final RegistryObject<SoundEvent> STRYKER_ENGINE = register("stryker_engine");
+
+    // Stryker MGS
+    public static final RegistryObject<SoundEvent> STRYKER_MGS_FIRE_1P = register("stryker_mgs_fire_1p");
+    public static final RegistryObject<SoundEvent> STRYKER_MGS_FIRE_3P = register("stryker_mgs_fire_3p");
+    public static final RegistryObject<SoundEvent> STRYKER_MGS_FIRE_3P_FAR = register("stryker_mgs_fire_3p_far");
+    public static final RegistryObject<SoundEvent> STRYKER_MGS_FIRE_3P_EXTRAFAR = register("stryker_mgs_fire_3p_extrafar");
+    public static final RegistryObject<SoundEvent> STRYKER_MGS_RELOAD = register("stryker_mgs_reload");
     public static void register(IEventBus eventBus) {
         REGISTRY.register(eventBus);
     }

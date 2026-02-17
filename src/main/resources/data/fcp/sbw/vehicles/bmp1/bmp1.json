@@ -47,7 +47,7 @@
     }
   ],
   "EngineType": "Track",
-  "EngineSound": "superbwarfare:engine_truck",
+  "EngineSound": "fcp:bmp1_engine",
   "EngineInfo": {
     "Buoyancy": 0,
     "EnergyCostRate": 96,
@@ -69,7 +69,7 @@
       "AmmoType": "superbwarfare:medium_anti_ground_missile",
       "Projectile": "superbwarfare:wire_guide_missile",
       "Magazine": 1,
-      "EmptyReloadTime": 200,
+      "EmptyReloadTime": 250,
       "Damage": 400,
       "ExplosionDamage": 80,
       "ExplosionRadius": 6,
@@ -77,7 +77,13 @@
       "ShootPos": {"Transform": "Barrel", "Positions": [[-0.017569, 0.522662, 1.425669]], "Directions": ["Barrel"]},
       "Crosshair": "@VehicleCommonMissile",
       "CrosshairColor": "0x00FF66",
-      "SoundInfo": {"Fire1P": "superbwarfare:bmp_2_missile_fire_1p", "Fire3P": "superbwarfare:bmp_2_missile_fire_3p"},
+      "SoundInfo": {
+        "Fire1P": "fcp:bmp1_malyutka_fire_1p",
+        "Fire3P": "fcp:bmp1_malyutka_fire_3p",
+        "Fire3PFar": "fcp:bmp1_malyutka_fire_3p_far",
+        "VehicleReload": "fcp:bmp1_malyutka_reload",
+        "Change": "fcp:bmp1_into_malyutka"
+      },
       "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/missile_9m113.png"
     },
     "Cannon": {
@@ -88,7 +94,7 @@
       "IsArmorPiercingProjectile": true,
       "DefaultZoom": 3,
       "Magazine": 1,
-      "EmptyReloadTime": 120,
+      "EmptyReloadTime": 160,
       "Velocity": 20,
       "Damage": 200,
       "ExplosionDamage": 80,
@@ -105,8 +111,12 @@
       ],
       "SoundRadius": 32,
       "SoundInfo": {
-        "Fire1P": "superbwarfare:bmp_2_cannon_fire_1p",
-        "Fire3P": "superbwarfare:bmp_2_cannon_fire_3p"
+        "Fire1P": "fcp:bmp1_fire_1p",
+        "Fire3P": "fcp:bmp1_fire_3p",
+        "Fire3PFar": "fcp:bmp1_fire_3p_far",
+        "Fire3PVeryFar": "fcp:bmp1_fire_3p_extrafar",
+        "VehicleReload": "fcp:bmp1_cannon_reload",
+        "Change": "fcp:bmp1_into_cannon"
       },
       "ShootPos": {
         "Transform": "Barrel",
@@ -135,8 +145,9 @@
       "CrosshairColor": "0x66FF00",
       "Name": "weapon.fcp.coaxial_pkt",
       "SoundInfo": {
-        "Fire1P": "superbwarfare:coax_fire_1p",
-        "Fire3P": "superbwarfare:coax_fire_1p"
+        "Fire1P": "fcp:russian_coax_1p",
+        "Fire3P": "fcp:russian_coax_3p",
+        "Change": "fcp:coax_equip"
       },
       "SoundRadius": 16,
       "AmmoType": "superbwarfare:small_rocket",
@@ -186,7 +197,6 @@
     "ExplosionRadius": 7
   },
   "ThirdPersonCameraPos": [0, 1, 5],
-  "VehicleIcon": "superbwarfare:textures/vehicle_icon/humvee_icon.png",
   "ContainerIcon": "fcp:textures/gui/vehicle/type/land_ter.png",
   "Type": "APC",
   "CollisionLevel": {
@@ -197,7 +207,6 @@
       [0.15, 0.09, false]
     ]
   },
-  "HornSound": "superbwarfare:lav_150_engine",
   "HudType": "@Land",
   "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],
   "InertiaRotateRate": 1.8

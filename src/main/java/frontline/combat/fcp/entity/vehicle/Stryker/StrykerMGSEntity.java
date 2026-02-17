@@ -80,6 +80,7 @@ public class StrykerMGSEntity extends CamoVehicleBase {
         }
     }
 
+
     @Override
     public void baseTick() {
         super.baseTick();

@@ -101,7 +101,7 @@
     {
       "IsEnclosed": true,
       "HidePlayer": true,
-      "Weapons": ["Cannon"],
+      "Weapons": ["Cannon", "Coax"],
       "Transform": "Vehicle",
       "CameraPos": {
         "Transform": "Turret",
@@ -118,11 +118,11 @@
       "Icon": "fcp:textures/screens/vehicle_weapon/ap_shell.png",
       "DefaultFireMode": "Semi",
       "AvailableFireModes": "Semi",
-      "Projectile": "superbwarfare:cannon_shell",
+      "Projectile": "superbwarfare:small_cannon_shell",
       "IsArmorPiercingProjectile": true,
       "DefaultZoom": 3,
       "Magazine": 1,
-      "EmptyReloadTime": 120,
+      "EmptyReloadTime": 160,
       "Velocity": 20,
       "Damage": 200,
       "ExplosionDamage": 80,
@@ -131,23 +131,64 @@
       "RecoilForce": 0,
       "Spread": 0.02,
       "ShootAnimationTime": 10,
-      "Crosshair": "@VehicleUsTank",
+      "Crosshair": "@VehicleCommonGun",
       "CrosshairColor": "0x00ff66",
       "Name": "weapon.fcp.2a28_grom",
       "AmmoType": [
         "superbwarfare:ap_cannon_shell"
       ],
       "SoundRadius": 32,
-      "SoundInfo": {"Fire1P": "superbwarfare:bmp_2_missile_fire_1p", "Fire3P": "superbwarfare:bmp_2_missile_fire_3p"},
+      "SoundInfo": {
+        "Fire1P": "fcp:bmp1_fire_1p",
+        "Fire3P": "fcp:bmp1_fire_3p",
+        "Fire3PFar": "fcp:bmp1_fire_3p_far",
+        "Fire3PVeryFar": "fcp:bmp1_fire_3p_extrafar",
+        "VehicleReload": "fcp:bmp1_cannon_reload",
+        "Change": "fcp:bmp1_into_cannon"
+      },
       "ShootPos": {
         "Transform": "Barrel",
         "Positions": [[0.0196, 0.043525, 1.854931]],
         "Directions": ["Barrel"]
       }
+    },
+    "Coax": {
+      "DefaultFireMode": "Auto",
+      "AvailableFireModes": "Auto",
+      "Projectile": "superbwarfare:projectile",
+      "DefaultZoom": 3,
+      "RPM": 450,
+      "Magazine": 100,
+      "EmptyReloadTime": 20,
+      "Velocity": 25,
+      "Damage": 200,
+      "BypassesArmor": 0.2,
+      "HeatPerShoot": 0,
+      "NaturalCooldown": 1,
+      "RecoilTime": 16,
+      "RecoilForce": 0.05,
+      "ShootAnimationTime": 1,
+      "Spread": 0.25,
+      "Crosshair": "@VehicleCommonGun",
+      "CrosshairColor": "0x66FF00",
+      "Name": "weapon.fcp.coaxial_pkt",
+      "SoundInfo": {
+        "Fire1P": "fcp:russian_coax_1p",
+        "Fire3P": "fcp:russian_coax_3p",
+        "Change": "fcp:coax_equip"
+      },
+      "SoundRadius": 16,
+      "AmmoType": "superbwarfare:small_rocket",
+      "Icon": "fcp:textures/screens/vehicle_weapon/12_7mm.png",
+      "ShootPos": {
+        "Transform": "Barrel",
+        "Positions": [[-0.467737, 0.003569, 2.497287]],
+        "Directions": ["Barrel"]
+      }
     }
   },
   "EngineType": "Wheel",
-  "EngineSound": "superbwarfare:truck_engine",
+  "EngineSound": "fcp:toyota_engine",
   "EngineInfo": {
     "Buoyancy": 0,
     "EnergyCostRate": 96,
@@ -197,7 +238,6 @@
     "ExplosionRadius": 7
   },
   "ThirdPersonCameraPos": [0, 1, 5],
-  "VehicleIcon": "superbwarfare:textures/vehicle_icon/humvee_icon.png",
   "ContainerIcon": "fcp:textures/gui/vehicle/type/land_ter.png",
   "Type": "Car",
   "CollisionLevel": {
@@ -208,7 +248,6 @@
       [0.15, 0.09, false]
     ]
   },
-  "HornSound": "superbwarfare:truck_horn",
   "HudType": "@Land",
   "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],
   "InertiaRotateRate": 1.8
