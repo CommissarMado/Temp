@@ -78,6 +78,7 @@
       "ShootPos": {"Transform": "Barrel", "Positions": [[-0.017569, 0.522662, 1.425669]], "Directions": ["Barrel"]},
       "Crosshair": "@VehicleCommonMissile",
       "CrosshairColor": "0x00FF66",
+      "SoundRadius": 32,
       "SoundInfo": {
         "Fire1P": "fcp:bmp1_malyutka_fire_1p",
         "Fire3P": "fcp:bmp1_malyutka_fire_3p",

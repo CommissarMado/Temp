@@ -269,5 +269,61 @@
         "stream": false
       }
     ]
+  },
+  "lav25_fire_1p": {
+    "sounds": [
+      {
+        "name": "fcp:lav/lav25/cannon/lav25_1p",
+        "stream": false
+      }
+    ]
+  },
+  "lav25_fire_3p": {
+    "sounds": [
+      {
+        "name": "fcp:lav/lav25/cannon/lav25_3p",
+        "stream": false
+      }
+    ]
+  },
+  "lav25_fire_3p_far": {
+    "sounds": [
+      {
+        "name": "fcp:lav/lav25/cannon/lav25_3p_far",
+        "stream": false
+      }
+    ]
+  },
+  "lav25_engine": {
+    "sounds": [
+      {
+        "name": "fcp:lav/lav25/lav25_engine",
+        "stream": true
+      }
+    ]
+  },
+  "m134_fire_1p": {
+    "sounds": [
+      {
+        "name": "fcp:littlebird/m134/m134_fire_1p",
+        "stream": false
+      }
+    ]
+  },
+  "m134_fire_3p": {
+    "sounds": [
+      {
+        "name": "fcp:littlebird/m134/m134_fire_3p",
+        "stream": false
+      }
+    ]
+  },
+  "m134_fire_3p_far": {
+    "sounds": [
+      {
+        "name": "fcp:littlebird/m134/m134_fire_3p_far",
+        "stream": false
+      }
+    ]
   }
 }

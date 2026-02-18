@@ -1,7 +1,0 @@
-﻿{
-  "ID": "fcp:t64",
-  "Model": {
-    "Model": "fcp:geo/t64.geo.json",
-    "Texture": "fcp:textures/entity/toyota.png"
-  }
-}

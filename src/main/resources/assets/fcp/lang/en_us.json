@@ -7,6 +7,7 @@
   "entity.fcp.toyota_hilux_spg9": "Toyota Hilux With SPG-9",
   "entity.fcp.bmp1": "BMP-1",
   "entity.fcp.t64": "T64",
+  "entity.fcp.lav25": "LAV-25",
 
   "//": "====================== Russian Tab ======================",
   "russiantab.fc_russian_tab": "[FC] Russian Vehicles",
@@ -23,6 +24,9 @@
   "weapon.fcp.m68a2_105mm": "M68A2 105mm Cannon",
   "weapon.fcp.m2_hb": "M2 HB",
   "weapon.fcp.spg9": "SPG-9",
+  "weapon.fcp.m242_bushmaster": "M242 Bushmaster",
+  "weapon.fcp.m240": "M240 Machine Gun",
+  "weapon.fcp.m2_50cal": "M2 50cal Machine Gun",
 
   "//": "========================= Foods =========================",
   "item.fcp.delicious_snack": "Box of Crayons",

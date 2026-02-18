@@ -7,7 +7,6 @@ import frontline.combat.fcp.entity.vehicle.Littlebird.LittlebirdArmedEntity;
 import frontline.combat.fcp.entity.vehicle.Littlebird.LittlebirdEntity;
 import frontline.combat.fcp.entity.vehicle.Stryker.StrykerM2Entity;
 import frontline.combat.fcp.entity.vehicle.Stryker.StrykerMGSEntity;
-import frontline.combat.fcp.entity.vehicle.T64.T64Entity;
 import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxBMPEntity;
 import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxEntity;
 import frontline.combat.fcp.entity.vehicle.Toyota.ToyotaHiluxRocketPodEntity;
@@ -56,9 +55,6 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<BMP1Entity>> BMP1 = register("bmp1",
             EntityType.Builder.of(BMP1Entity::new, MobCategory.MISC).setTrackingRange(512).setUpdateInterval(1).fireImmune().sized(3f,2f));
-
-    public static final RegistryObject<EntityType<T64Entity>> T64 = register("t64",
-            EntityType.Builder.of(T64Entity::new, MobCategory.MISC).setTrackingRange(512).setUpdateInterval(1).fireImmune().sized(3f,2f));
 
     public static final RegistryObject<EntityType<Lav25Entity>> LAV25 = register("lav25",
             EntityType.Builder.of(Lav25Entity::new, MobCategory.MISC).setTrackingRange(512).setUpdateInterval(1).fireImmune().sized(3f,2f));

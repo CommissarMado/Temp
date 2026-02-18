@@ -7,14 +7,12 @@ import frontline.combat.fcp.client.renderer.Littlebird.LittlebirdArmedRenderer;
 import frontline.combat.fcp.client.renderer.Littlebird.LittlebirdRenderer;
 import frontline.combat.fcp.client.renderer.Stryker.StrykerM2Renderer;
 import frontline.combat.fcp.client.renderer.Stryker.StrykerMGSRenderer;
-import frontline.combat.fcp.client.renderer.T64.T64Renderer;
 import frontline.combat.fcp.client.renderer.Toyota.ToyotaHiluxBMPRenderer;
 import frontline.combat.fcp.client.renderer.Toyota.ToyotaHiluxRenderer;
 import frontline.combat.fcp.client.renderer.Toyota.ToyotaHiluxRocketPodRenderer;
 import frontline.combat.fcp.client.renderer.Toyota.ToyotaHiluxSpg9Renderer;
 import frontline.combat.fcp.client.renderer.Uaz.UAZDSHKARenderer;
 import frontline.combat.fcp.client.renderer.Uaz.UAZRenderer;
-import frontline.combat.fcp.entity.vehicle.Uaz.UAZDSHKAEntity;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -40,7 +38,5 @@ public class ModEntityRenderers {
         event.registerEntityRenderer(ModEntities.BMP1.get(), BMP1Renderer::new);
 
         event.registerEntityRenderer(ModEntities.LAV25.get(), Lav25Renderer::new);
-
-        event.registerEntityRenderer(ModEntities.T64.get(), T64Renderer::new);
     }
 }

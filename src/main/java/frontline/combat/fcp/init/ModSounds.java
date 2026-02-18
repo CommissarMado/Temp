@@ -49,6 +49,11 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> LITTLEBIRD_ENGINE_IDLE = register("littlebird_engine_idle");
     public static final RegistryObject<SoundEvent> LITTLEBIRD_ENGINE_START = register("littlebird_engine_start");
 
+    // M134
+    public static final RegistryObject<SoundEvent> M134_FIRE_1P = register("m134_fire_1p");
+    public static final RegistryObject<SoundEvent> M134_FIRE_3P = register("m134_fire_3p");
+    public static final RegistryObject<SoundEvent> M134_FIRE_3P_FAR = register("m134_fire_3p_far");
+
     // Stryker's
     public static final RegistryObject<SoundEvent> STRYKER_ENGINE = register("stryker_engine");
 
@@ -64,6 +69,12 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> M2_FIRE_3P = register("m2_fire_3p");
     public static final RegistryObject<SoundEvent> M2_FIRE_3P_FAR = register("m2_fire_3p_far");
     public static final RegistryObject<SoundEvent> M2_RELOAD = register("m2_reload");
+
+    // Lav25
+    public static final RegistryObject<SoundEvent> LAV25_FIRE_1P = register("lav25_fire_1p");
+    public static final RegistryObject<SoundEvent> LAV25_FIRE_3P = register("lav25_fire_3p");
+    public static final RegistryObject<SoundEvent> LAV25_FIRE_3P_FAR = register("lav25_fire_3p_far");
+    public static final RegistryObject<SoundEvent> LAV25_RELOAD = register("lav25_engine");
 
     private static RegistryObject<SoundEvent> register(String name) {
         return REGISTRY.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fcp", name)));

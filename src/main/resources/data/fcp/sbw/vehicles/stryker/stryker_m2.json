@@ -235,7 +235,7 @@
       "EmptyReloadTime": 160,
       "Magazine": 200,
       "Velocity": 25,
-      "Damage": 40,
+      "Damage": 12,
       "BypassesArmor": 0.2,
       "HeatPerShoot": 5,
       "NaturalCooldown": 1,

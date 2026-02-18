@@ -1,7 +1,6 @@
 package frontline.combat.fcp.client.model.Stryker;
 
 import com.atsuishio.superbwarfare.client.model.entity.VehicleModel;
-import frontline.combat.fcp.entity.vehicle.Stryker.StrykerDragoonEntity;
 import frontline.combat.fcp.entity.vehicle.Stryker.StrykerMGSEntity;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;

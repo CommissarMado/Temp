@@ -79,7 +79,7 @@
       "CameraPos": {
         "Transform": "Barrel",
         "UseFixedCameraPos": true,
-        "Position": [0.622319, -0.224638, 1.793044],
+        "Position": [-0.503544, 1.308006, -0],
         "Rotation": "Barrel"
       },
       "MinPitch": -3,
@@ -90,7 +90,7 @@
       "Transform": "Turret",
       "Weapons": ["PassengerMachineGun"],
       "BanHand": true,
-      "Position": [-0.9697, -0.6, 0.066094],
+      "Position": [-0.9697, -0.7, -0.066094],
       "CameraPos": {
         "Transform": "WeaponStationBarrel",
         "UseFixedCameraPos": true,
@@ -238,7 +238,7 @@
     }
   },
   "ThirdPersonCameraPos": [0, 1, 5],
-  "ContainerIcon": "fcp:textures/gui/vehicle/type/land_rus.png",
+  "ContainerIcon": "fcp:textures/gui/vehicle/type/land_us.png",
   "Type": "APC",
   "CollisionLevel": {
     "Level": 3,

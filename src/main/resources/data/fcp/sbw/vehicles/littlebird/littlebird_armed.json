@@ -53,7 +53,7 @@
       "DefaultFireMode": "Auto",
       "AvailableFireModes": "Auto",
       "Magazine": 8,
-      "EmptyReloadTime": 80,
+      "EmptyReloadTime": 160,
       "Projectile": "superbwarfare:small_rocket",
       "Spread": 0.3,
       "Name": "weapon.fcp.hydra_rocket",
@@ -81,17 +81,17 @@
       "Projectile": "superbwarfare:projectile",
       "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/cannon_20mm.png",
       "DefaultZoom": 3,
-      "RPM": 2000,
+      "RPM": 1000,
       "Velocity": 30,
-      "Damage": 5,
+      "Damage": 2.5,
       "HeatPerShoot": 1,
       "NaturalCooldown": 1,
-      "Spread": 0.3,
-      "ArmorPiercing": 0.01,
+      "Spread": 0.6,
       "Name": "weapon.fcp.m134_minigun",
       "SoundInfo": {
-        "Fire1P": "superbwarfare:coax_fire_1p",
-        "Fire3P": "superbwarfare:coax_fire_1p"
+        "Fire1P": "fcp:m134_fire_1p",
+        "Fire3P": "fcp:m134_fire_3p",
+        "Fire3PFar": "fcp:m134_fire_3p_far"
       },
       "ShootPos": {
         "Transform": "Vehicle",

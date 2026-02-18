@@ -11,8 +11,10 @@ import java.lang.reflect.Field;
 public class LittlebirdEntity extends CamoVehicleBase {
 
     private static final ResourceLocation[] CAMO_TEXTURES = {
-            new ResourceLocation("fcp", "textures/entity/littlebird/littlebird_1.png"),
-            new ResourceLocation("fcp", "textures/entity/littlebird/littlebird_2.png")
+            new ResourceLocation("fcp", "textures/entity/littlebird/littlebird_armed_1.png"),
+            new ResourceLocation("fcp", "textures/entity/littlebird/littlebird_armed_2.png"),
+            new ResourceLocation("fcp", "textures/entity/littlebird/littlebird_armed_3.png"),
+            new ResourceLocation("fcp", "textures/entity/littlebird/littlebird_armed_4.png")
     };
 
     private static final String[] CAMO_NAMES = {"Standard", "Dark", "Shark"};
